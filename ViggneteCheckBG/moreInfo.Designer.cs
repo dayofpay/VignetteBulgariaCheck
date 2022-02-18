@@ -146,8 +146,9 @@
             this.Controls.Add(this.closeButton);
             this.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Bold);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "moreInfo";
-            this.Text = "moreInfo";
+            this.Text = "Повече информация";
             this.Load += new System.EventHandler(this.moreInfo_Load);
             this.mainPanel.ResumeLayout(false);
             this.bunifuPanel2.ResumeLayout(false);

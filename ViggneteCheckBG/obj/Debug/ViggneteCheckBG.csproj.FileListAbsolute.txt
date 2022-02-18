@@ -80,3 +80,6 @@ C:\Users\dayofpay\source\repos\ViggneteCheckBG\ViggneteCheckBG\obj\Debug\Viggnet
 C:\Users\dayofpay\source\repos\ViggneteCheckBG\ViggneteCheckBG\bin\Debug\Newtonsoft.Json.dll
 C:\Users\dayofpay\source\repos\ViggneteCheckBG\ViggneteCheckBG\bin\Debug\Newtonsoft.Json.xml
 C:\Users\dayofpay\source\repos\ViggneteCheckBG\ViggneteCheckBG\obj\Debug\ViggneteCheckBG.moreInfo.resources
+C:\Users\dayofpay\source\repos\ViggneteCheckBG\ViggneteCheckBG\bin\Debug\Guna.UI.dll
+C:\Users\dayofpay\source\repos\ViggneteCheckBG\ViggneteCheckBG\obj\Debug\ViggneteCheckBG.katGlobi.resources
+C:\Users\dayofpay\source\repos\ViggneteCheckBG\ViggneteCheckBG\obj\Debug\ViggneteCheckBG.katResult.resources

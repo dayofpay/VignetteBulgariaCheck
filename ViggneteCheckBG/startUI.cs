@@ -29,6 +29,14 @@ namespace ViggneteCheckBG
         public startUI()
         {
             InitializeComponent();
+            licenseNumber.KeyPress += new KeyPressEventHandler(clickedButton);
+        }
+        private void clickedButton(Object o, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                checkVignette_Click(this, new EventArgs());
+            }
         }
         private void exitButton_Click(object sender, EventArgs e)
         {
@@ -37,6 +45,10 @@ namespace ViggneteCheckBG
 
         private void startUI_Load(object sender, EventArgs e)
         {
+            
+            infoLabel.Text = @"Софтуера е разработен
+От: v-devs.eu
+Версия: " + Properties.Settings.Default.softwareVersion;
         }
 
         private void checkVignette_Click(object sender, EventArgs e)
@@ -127,6 +139,29 @@ namespace ViggneteCheckBG
         private void licenseNumber_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void penalties_Click(object sender, EventArgs e)
+        {
+            katGlobi globi = new katGlobi();
+            globi.ShowDialog();
+        }
+
+        private void licensing1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ratingStats_ValueChanged(object sender, Bunifu.UI.WinForms.BunifuRating.ValueChangedEventArgs e)
+        {
+            if(ratingStats.Value >= 3)
+            {
+                MessageBox.Show("Благодарим ви за добрата оценка !","Vignette Check BG");
+            }
+            else
+            {
+                MessageBox.Show("Благодарим ви за оценката !", "Vignette Check BG");
+            }
         }
     }
 

@@ -30,8 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(startUI));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -40,6 +41,8 @@
             this.exitButton = new Guna.UI2.WinForms.Guna2ControlBox();
             this.bunifuSnackbar1 = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.label1 = new System.Windows.Forms.Label();
+            this.infoLabel = new System.Windows.Forms.Label();
+            this.penalties = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.mainPanel = new Bunifu.UI.WinForms.BunifuPanel();
             this.moreInfo = new Guna.UI2.WinForms.Guna2GradientButton();
             this.bunifuPanel6 = new Bunifu.UI.WinForms.BunifuPanel();
@@ -72,7 +75,7 @@
             this.bunifuButton21 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.panelButtons = new Bunifu.UI.WinForms.BunifuPanel();
             this.licenseNumber = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.ratingStats = new Bunifu.UI.WinForms.BunifuRating();
             this.mainPanel.SuspendLayout();
             this.bunifuPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -185,6 +188,105 @@
             this.label1.Size = new System.Drawing.Size(203, 14);
             this.label1.TabIndex = 4;
             this.label1.Text = "Регистрационен номер на МПС:";
+            // 
+            // infoLabel
+            // 
+            this.infoLabel.AutoSize = true;
+            this.infoLabel.Location = new System.Drawing.Point(12, 545);
+            this.infoLabel.Name = "infoLabel";
+            this.infoLabel.Size = new System.Drawing.Size(154, 42);
+            this.infoLabel.TabIndex = 7;
+            this.infoLabel.Text = "Софтуера е разработен\r\nОт: v-devs.eu\r\nВерсия: 1.1\r\n";
+            // 
+            // penalties
+            // 
+            this.penalties.AllowAnimations = true;
+            this.penalties.AllowMouseEffects = true;
+            this.penalties.AllowToggling = false;
+            this.penalties.AnimationSpeed = 200;
+            this.penalties.AutoGenerateColors = false;
+            this.penalties.AutoRoundBorders = false;
+            this.penalties.AutoSizeLeftIcon = true;
+            this.penalties.AutoSizeRightIcon = true;
+            this.penalties.BackColor = System.Drawing.Color.Transparent;
+            this.penalties.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.penalties.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("penalties.BackgroundImage")));
+            this.penalties.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.penalties.ButtonText = "[КАТ] ПРОВЕРКА ЗА ГЛОБИ\r\n";
+            this.penalties.ButtonTextMarginLeft = 0;
+            this.penalties.ColorContrastOnClick = 45;
+            this.penalties.ColorContrastOnHover = 45;
+            this.penalties.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.penalties.CustomizableEdges = borderEdges1;
+            this.penalties.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.penalties.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.penalties.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.penalties.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.penalties.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
+            this.penalties.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.penalties.ForeColor = System.Drawing.Color.LightGray;
+            this.penalties.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.penalties.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.penalties.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.penalties.IconMarginLeft = 11;
+            this.penalties.IconPadding = 10;
+            this.penalties.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.penalties.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.penalties.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.penalties.IconSize = 25;
+            this.penalties.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.penalties.IdleBorderRadius = 15;
+            this.penalties.IdleBorderThickness = 2;
+            this.penalties.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.penalties.IdleIconLeftImage = null;
+            this.penalties.IdleIconRightImage = null;
+            this.penalties.IndicateFocus = false;
+            this.penalties.Location = new System.Drawing.Point(4, 73);
+            this.penalties.Name = "penalties";
+            this.penalties.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.penalties.OnDisabledState.BorderRadius = 15;
+            this.penalties.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.penalties.OnDisabledState.BorderThickness = 2;
+            this.penalties.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.penalties.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.penalties.OnDisabledState.IconLeftImage = null;
+            this.penalties.OnDisabledState.IconRightImage = null;
+            this.penalties.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.penalties.onHoverState.BorderRadius = 15;
+            this.penalties.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.penalties.onHoverState.BorderThickness = 2;
+            this.penalties.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.penalties.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.penalties.onHoverState.IconLeftImage = null;
+            this.penalties.onHoverState.IconRightImage = null;
+            this.penalties.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.penalties.OnIdleState.BorderRadius = 15;
+            this.penalties.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.penalties.OnIdleState.BorderThickness = 2;
+            this.penalties.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.penalties.OnIdleState.ForeColor = System.Drawing.Color.LightGray;
+            this.penalties.OnIdleState.IconLeftImage = null;
+            this.penalties.OnIdleState.IconRightImage = null;
+            this.penalties.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.penalties.OnPressedState.BorderRadius = 15;
+            this.penalties.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.penalties.OnPressedState.BorderThickness = 2;
+            this.penalties.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.penalties.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.penalties.OnPressedState.IconLeftImage = null;
+            this.penalties.OnPressedState.IconRightImage = null;
+            this.penalties.Size = new System.Drawing.Size(175, 42);
+            this.penalties.TabIndex = 8;
+            this.penalties.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.penalties.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.penalties.TextMarginLeft = 0;
+            this.penalties.TextPadding = new System.Windows.Forms.Padding(0);
+            this.penalties.UseDefaultRadiusAndThickness = true;
+            this.penalties.Click += new System.EventHandler(this.penalties_Click);
             // 
             // mainPanel
             // 
@@ -429,7 +531,7 @@
             this.bunifuPanel1.Location = new System.Drawing.Point(37, 139);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(187, 153);
+            this.bunifuPanel1.Size = new System.Drawing.Size(228, 153);
             this.bunifuPanel1.TabIndex = 1;
             // 
             // vTo
@@ -543,11 +645,11 @@
             this.checkVignette.ColorContrastOnClick = 45;
             this.checkVignette.ColorContrastOnHover = 45;
             this.checkVignette.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.checkVignette.CustomizableEdges = borderEdges1;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.checkVignette.CustomizableEdges = borderEdges2;
             this.checkVignette.DialogResult = System.Windows.Forms.DialogResult.None;
             this.checkVignette.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.checkVignette.DisabledFillColor = System.Drawing.Color.Empty;
@@ -635,11 +737,11 @@
             this.bunifuButton21.ColorContrastOnClick = 45;
             this.bunifuButton21.ColorContrastOnHover = 45;
             this.bunifuButton21.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.bunifuButton21.CustomizableEdges = borderEdges2;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.bunifuButton21.CustomizableEdges = borderEdges3;
             this.bunifuButton21.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton21.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton21.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -737,9 +839,9 @@
             this.licenseNumber.BorderColorIdle = System.Drawing.Color.Silver;
             this.licenseNumber.BorderRadius = 1;
             this.licenseNumber.BorderThickness = 2;
-            this.licenseNumber.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.licenseNumber.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.licenseNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.licenseNumber.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.licenseNumber.DefaultFont = new System.Drawing.Font("Segoe UI Emoji", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.licenseNumber.DefaultText = "";
             this.licenseNumber.FillColor = System.Drawing.Color.White;
             this.licenseNumber.HideSelection = true;
@@ -749,7 +851,7 @@
             this.licenseNumber.IconRight = null;
             this.licenseNumber.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.licenseNumber.Lines = new string[0];
-            this.licenseNumber.Location = new System.Drawing.Point(362, 162);
+            this.licenseNumber.Location = new System.Drawing.Point(379, 166);
             this.licenseNumber.MaxLength = 32767;
             this.licenseNumber.MinimumSize = new System.Drawing.Size(1, 1);
             this.licenseNumber.Modified = false;
@@ -778,33 +880,47 @@
             this.licenseNumber.Padding = new System.Windows.Forms.Padding(3);
             this.licenseNumber.PasswordChar = '\0';
             this.licenseNumber.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.licenseNumber.PlaceholderText = "Въведете регистрационния номер";
+            this.licenseNumber.PlaceholderText = "ВЪВЕДЕТЕ РЕГИСТРАЦИОННИЯ НОМЕР";
             this.licenseNumber.ReadOnly = false;
             this.licenseNumber.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.licenseNumber.SelectedText = "";
             this.licenseNumber.SelectionLength = 0;
             this.licenseNumber.SelectionStart = 0;
             this.licenseNumber.ShortcutsEnabled = true;
-            this.licenseNumber.Size = new System.Drawing.Size(303, 47);
+            this.licenseNumber.Size = new System.Drawing.Size(354, 46);
             this.licenseNumber.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.licenseNumber.TabIndex = 1;
             this.licenseNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.licenseNumber.TextMarginBottom = 0;
-            this.licenseNumber.TextMarginLeft = 3;
+            this.licenseNumber.TextMarginLeft = 40;
             this.licenseNumber.TextMarginTop = 1;
-            this.licenseNumber.TextPlaceholder = "Въведете регистрационния номер";
+            this.licenseNumber.TextPlaceholder = "ВЪВЕДЕТЕ РЕГИСТРАЦИОННИЯ НОМЕР";
             this.licenseNumber.UseSystemPasswordChar = false;
             this.licenseNumber.WordWrap = true;
             this.licenseNumber.TextChanged += new System.EventHandler(this.licenseNumber_TextChanged);
             // 
-            // label9
+            // ratingStats
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(12, 545);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(154, 42);
-            this.label9.TabIndex = 7;
-            this.label9.Text = "Софтуера е разработен\r\nОт: v-devs.eu\r\nВерсия: 1.0";
+            this.ratingStats.BackColor = System.Drawing.Color.Transparent;
+            this.ratingStats.DisabledEmptyFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.ratingStats.DisabledRatedFillColor = System.Drawing.Color.DarkGray;
+            this.ratingStats.EmptyBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.ratingStats.EmptyFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.ratingStats.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(217)))), ((int)(((byte)(20)))));
+            this.ratingStats.HoverFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(217)))), ((int)(((byte)(20)))));
+            this.ratingStats.InnerRadius = 2F;
+            this.ratingStats.Location = new System.Drawing.Point(197, 7);
+            this.ratingStats.Name = "ratingStats";
+            this.ratingStats.OuterRadius = 10F;
+            this.ratingStats.RatedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(217)))), ((int)(((byte)(20)))));
+            this.ratingStats.RatedFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(217)))), ((int)(((byte)(20)))));
+            this.ratingStats.ReadOnly = false;
+            this.ratingStats.RightClickToClear = true;
+            this.ratingStats.Size = new System.Drawing.Size(121, 22);
+            this.ratingStats.TabIndex = 9;
+            this.ratingStats.Text = "ratingStats";
+            this.ratingStats.Value = 2;
+            this.ratingStats.ValueChanged += new System.EventHandler<Bunifu.UI.WinForms.BunifuRating.ValueChangedEventArgs>(this.ratingStats_ValueChanged);
             // 
             // startUI
             // 
@@ -812,7 +928,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(174)))), ((int)(((byte)(235)))));
             this.ClientSize = new System.Drawing.Size(1019, 617);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.ratingStats);
+            this.Controls.Add(this.penalties);
+            this.Controls.Add(this.infoLabel);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.checkVignette);
             this.Controls.Add(this.label1);
@@ -822,8 +940,9 @@
             this.Controls.Add(this.exitButton);
             this.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "startUI";
-            this.Text = "StartUI";
+            this.Text = "Начално Меню | Vignette Check BG";
             this.Load += new System.EventHandler(this.startUI_Load);
             this.mainPanel.ResumeLayout(false);
             this.bunifuPanel6.ResumeLayout(false);
@@ -887,7 +1006,9 @@
         public System.Windows.Forms.Label vignetteNum;
         public System.Windows.Forms.PictureBox pictureBox6;
         private Guna.UI2.WinForms.Guna2GradientButton moreInfo;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label infoLabel;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 penalties;
+        private Bunifu.UI.WinForms.BunifuRating ratingStats;
     }
 }
 

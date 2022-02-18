@@ -153,6 +153,36 @@ namespace ViggneteCheckBG.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Done_100px {
+            get {
+                object obj = ResourceManager.GetObject("Done_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap green_square_48px {
+            get {
+                object obj = ResourceManager.GetObject("green_square_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap id_not_verified_40px {
+            get {
+                object obj = ResourceManager.GetObject("id_not_verified_40px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap question_mark_64px {
             get {
                 object obj = ResourceManager.GetObject("question_mark_64px", resourceCulture);
@@ -166,6 +196,16 @@ namespace ViggneteCheckBG.Properties {
         internal static System.Drawing.Bitmap show_password_64px {
             get {
                 object obj = ResourceManager.GetObject("show_password_64px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap spam_40px {
+            get {
+                object obj = ResourceManager.GetObject("spam_40px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

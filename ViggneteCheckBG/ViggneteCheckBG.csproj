@@ -138,14 +138,19 @@
     <Reference Include="Bunifu.UI.WinForms.Deprecated, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
       <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.Deprecated.dll</HintPath>
     </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\..\Downloads\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2, Version=2.0.2.9, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.2.9\lib\net40\Guna.UI2.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -157,6 +162,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="katGlobi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="katGlobi.Designer.cs">
+      <DependentUpon>katGlobi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="katResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="katResult.Designer.cs">
+      <DependentUpon>katResult.cs</DependentUpon>
+    </Compile>
     <Compile Include="moreData.cs" />
     <Compile Include="moreInfo.cs">
       <SubType>Form</SubType>
@@ -172,6 +189,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="katGlobi.resx">
+      <DependentUpon>katGlobi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="katResult.resx">
+      <DependentUpon>katResult.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="moreInfo.resx">
       <DependentUpon>moreInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -199,6 +222,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Results\katResponse.json" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -238,6 +262,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="car_64px.ico" />
+    <None Include="Resources\id_not_verified_40px.png" />
+    <None Include="Resources\Done_100px.png" />
+    <None Include="Resources\spam_40px.png" />
+    <None Include="Resources\green_square_48px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="AfterBuild">
+    <ItemGroup>
+      <MoveToLibFolder Include="$(OutputPath)*.dll ; $(OutputPath)*.pdb ; $(OutputPath)*.xml" />
+    </ItemGroup>
+    <Move SourceFiles="@(MoveToLibFolder)" DestinationFolder="$(OutputPath)lib" OverwriteReadOnlyFiles="true" />
+  </Target>
 </Project>
