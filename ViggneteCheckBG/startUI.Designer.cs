@@ -45,29 +45,29 @@
             this.penalties = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.mainPanel = new Bunifu.UI.WinForms.BunifuPanel();
             this.moreInfo = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.bunifuPanel6 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.panel6 = new Bunifu.UI.WinForms.BunifuPanel();
             this.label8 = new System.Windows.Forms.Label();
             this.vignetteNum = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.bunifuPanel5 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.panel5 = new Bunifu.UI.WinForms.BunifuPanel();
             this.label7 = new System.Windows.Forms.Label();
             this.price = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.bunifuPanel4 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.panel3 = new Bunifu.UI.WinForms.BunifuPanel();
             this.label5 = new System.Windows.Forms.Label();
             this.mdtType = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.bunifuPanel3 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.panel2 = new Bunifu.UI.WinForms.BunifuPanel();
             this.label4 = new System.Windows.Forms.Label();
             this.licPlate = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.panel4 = new Bunifu.UI.WinForms.BunifuPanel();
             this.vTo = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.vTill = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.panel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.vVignette = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -76,18 +76,21 @@
             this.panelButtons = new Bunifu.UI.WinForms.BunifuPanel();
             this.licenseNumber = new Bunifu.UI.WinForms.BunifuTextBox();
             this.ratingStats = new Bunifu.UI.WinForms.BunifuRating();
+            this.theme = new Bunifu.UI.WinForms.BunifuDropdown();
+            this.welcomeText = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.mainPanel.SuspendLayout();
-            this.bunifuPanel6.SuspendLayout();
+            this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.bunifuPanel5.SuspendLayout();
+            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.bunifuPanel4.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.bunifuPanel3.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.bunifuPanel1.SuspendLayout();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.bunifuPanel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -194,9 +197,9 @@
             this.infoLabel.AutoSize = true;
             this.infoLabel.Location = new System.Drawing.Point(12, 545);
             this.infoLabel.Name = "infoLabel";
-            this.infoLabel.Size = new System.Drawing.Size(154, 42);
+            this.infoLabel.Size = new System.Drawing.Size(154, 56);
             this.infoLabel.TabIndex = 7;
-            this.infoLabel.Text = "Софтуера е разработен\r\nОт: v-devs.eu\r\nВерсия: 1.1\r\n";
+            this.infoLabel.Text = "Софтуера е разработен\r\nОт: v-devs.eu\r\nВерсия: 1.2\r\n\r\n";
             // 
             // penalties
             // 
@@ -297,12 +300,12 @@
             this.mainPanel.BorderRadius = 5;
             this.mainPanel.BorderThickness = 2;
             this.mainPanel.Controls.Add(this.moreInfo);
-            this.mainPanel.Controls.Add(this.bunifuPanel6);
-            this.mainPanel.Controls.Add(this.bunifuPanel5);
-            this.mainPanel.Controls.Add(this.bunifuPanel4);
-            this.mainPanel.Controls.Add(this.bunifuPanel3);
-            this.mainPanel.Controls.Add(this.bunifuPanel1);
-            this.mainPanel.Controls.Add(this.bunifuPanel2);
+            this.mainPanel.Controls.Add(this.panel6);
+            this.mainPanel.Controls.Add(this.panel5);
+            this.mainPanel.Controls.Add(this.panel3);
+            this.mainPanel.Controls.Add(this.panel2);
+            this.mainPanel.Controls.Add(this.panel4);
+            this.mainPanel.Controls.Add(this.panel1);
             this.mainPanel.Location = new System.Drawing.Point(197, 279);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.ShowBorders = true;
@@ -335,22 +338,22 @@
             this.moreInfo.Text = "Още информация";
             this.moreInfo.Click += new System.EventHandler(this.moreInfo_Click);
             // 
-            // bunifuPanel6
+            // panel6
             // 
-            this.bunifuPanel6.BackgroundColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel6.BackgroundImage")));
-            this.bunifuPanel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel6.BorderColor = System.Drawing.Color.DarkGray;
-            this.bunifuPanel6.BorderRadius = 3;
-            this.bunifuPanel6.BorderThickness = 1;
-            this.bunifuPanel6.Controls.Add(this.label8);
-            this.bunifuPanel6.Controls.Add(this.vignetteNum);
-            this.bunifuPanel6.Controls.Add(this.pictureBox6);
-            this.bunifuPanel6.Location = new System.Drawing.Point(532, 151);
-            this.bunifuPanel6.Name = "bunifuPanel6";
-            this.bunifuPanel6.ShowBorders = true;
-            this.bunifuPanel6.Size = new System.Drawing.Size(187, 112);
-            this.bunifuPanel6.TabIndex = 5;
+            this.panel6.BackgroundColor = System.Drawing.Color.Transparent;
+            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
+            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel6.BorderColor = System.Drawing.Color.DarkGray;
+            this.panel6.BorderRadius = 3;
+            this.panel6.BorderThickness = 1;
+            this.panel6.Controls.Add(this.label8);
+            this.panel6.Controls.Add(this.vignetteNum);
+            this.panel6.Controls.Add(this.pictureBox6);
+            this.panel6.Location = new System.Drawing.Point(532, 151);
+            this.panel6.Name = "panel6";
+            this.panel6.ShowBorders = true;
+            this.panel6.Size = new System.Drawing.Size(187, 112);
+            this.panel6.TabIndex = 5;
             // 
             // label8
             // 
@@ -380,22 +383,22 @@
             this.pictureBox6.TabIndex = 0;
             this.pictureBox6.TabStop = false;
             // 
-            // bunifuPanel5
+            // panel5
             // 
-            this.bunifuPanel5.BackgroundColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel5.BackgroundImage")));
-            this.bunifuPanel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel5.BorderColor = System.Drawing.Color.DarkGray;
-            this.bunifuPanel5.BorderRadius = 3;
-            this.bunifuPanel5.BorderThickness = 1;
-            this.bunifuPanel5.Controls.Add(this.label7);
-            this.bunifuPanel5.Controls.Add(this.price);
-            this.bunifuPanel5.Controls.Add(this.pictureBox5);
-            this.bunifuPanel5.Location = new System.Drawing.Point(281, 151);
-            this.bunifuPanel5.Name = "bunifuPanel5";
-            this.bunifuPanel5.ShowBorders = true;
-            this.bunifuPanel5.Size = new System.Drawing.Size(187, 112);
-            this.bunifuPanel5.TabIndex = 4;
+            this.panel5.BackgroundColor = System.Drawing.Color.Transparent;
+            this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
+            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel5.BorderColor = System.Drawing.Color.DarkGray;
+            this.panel5.BorderRadius = 3;
+            this.panel5.BorderThickness = 1;
+            this.panel5.Controls.Add(this.label7);
+            this.panel5.Controls.Add(this.price);
+            this.panel5.Controls.Add(this.pictureBox5);
+            this.panel5.Location = new System.Drawing.Point(281, 151);
+            this.panel5.Name = "panel5";
+            this.panel5.ShowBorders = true;
+            this.panel5.Size = new System.Drawing.Size(187, 112);
+            this.panel5.TabIndex = 4;
             // 
             // label7
             // 
@@ -425,22 +428,22 @@
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
             // 
-            // bunifuPanel4
+            // panel3
             // 
-            this.bunifuPanel4.BackgroundColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel4.BackgroundImage")));
-            this.bunifuPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel4.BorderColor = System.Drawing.Color.DarkGray;
-            this.bunifuPanel4.BorderRadius = 3;
-            this.bunifuPanel4.BorderThickness = 1;
-            this.bunifuPanel4.Controls.Add(this.label5);
-            this.bunifuPanel4.Controls.Add(this.mdtType);
-            this.bunifuPanel4.Controls.Add(this.pictureBox4);
-            this.bunifuPanel4.Location = new System.Drawing.Point(532, 9);
-            this.bunifuPanel4.Name = "bunifuPanel4";
-            this.bunifuPanel4.ShowBorders = true;
-            this.bunifuPanel4.Size = new System.Drawing.Size(187, 112);
-            this.bunifuPanel4.TabIndex = 3;
+            this.panel3.BackgroundColor = System.Drawing.Color.Transparent;
+            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.BorderColor = System.Drawing.Color.DarkGray;
+            this.panel3.BorderRadius = 3;
+            this.panel3.BorderThickness = 1;
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.mdtType);
+            this.panel3.Controls.Add(this.pictureBox4);
+            this.panel3.Location = new System.Drawing.Point(532, 9);
+            this.panel3.Name = "panel3";
+            this.panel3.ShowBorders = true;
+            this.panel3.Size = new System.Drawing.Size(187, 112);
+            this.panel3.TabIndex = 3;
             // 
             // label5
             // 
@@ -470,22 +473,22 @@
             this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
             // 
-            // bunifuPanel3
+            // panel2
             // 
-            this.bunifuPanel3.BackgroundColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel3.BackgroundImage")));
-            this.bunifuPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel3.BorderColor = System.Drawing.Color.DarkGray;
-            this.bunifuPanel3.BorderRadius = 3;
-            this.bunifuPanel3.BorderThickness = 1;
-            this.bunifuPanel3.Controls.Add(this.label4);
-            this.bunifuPanel3.Controls.Add(this.licPlate);
-            this.bunifuPanel3.Controls.Add(this.pictureBox3);
-            this.bunifuPanel3.Location = new System.Drawing.Point(281, 9);
-            this.bunifuPanel3.Name = "bunifuPanel3";
-            this.bunifuPanel3.ShowBorders = true;
-            this.bunifuPanel3.Size = new System.Drawing.Size(187, 112);
-            this.bunifuPanel3.TabIndex = 2;
+            this.panel2.BackgroundColor = System.Drawing.Color.Transparent;
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.BorderColor = System.Drawing.Color.DarkGray;
+            this.panel2.BorderRadius = 3;
+            this.panel2.BorderThickness = 1;
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.licPlate);
+            this.panel2.Controls.Add(this.pictureBox3);
+            this.panel2.Location = new System.Drawing.Point(281, 9);
+            this.panel2.Name = "panel2";
+            this.panel2.ShowBorders = true;
+            this.panel2.Size = new System.Drawing.Size(187, 112);
+            this.panel2.TabIndex = 2;
             // 
             // label4
             // 
@@ -515,24 +518,24 @@
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             // 
-            // bunifuPanel1
+            // panel4
             // 
-            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
-            this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel1.BorderColor = System.Drawing.Color.DarkGray;
-            this.bunifuPanel1.BorderRadius = 3;
-            this.bunifuPanel1.BorderThickness = 1;
-            this.bunifuPanel1.Controls.Add(this.vTo);
-            this.bunifuPanel1.Controls.Add(this.label6);
-            this.bunifuPanel1.Controls.Add(this.label2);
-            this.bunifuPanel1.Controls.Add(this.vTill);
-            this.bunifuPanel1.Controls.Add(this.pictureBox2);
-            this.bunifuPanel1.Location = new System.Drawing.Point(37, 139);
-            this.bunifuPanel1.Name = "bunifuPanel1";
-            this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(228, 153);
-            this.bunifuPanel1.TabIndex = 1;
+            this.panel4.BackgroundColor = System.Drawing.Color.Transparent;
+            this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel4.BorderColor = System.Drawing.Color.DarkGray;
+            this.panel4.BorderRadius = 3;
+            this.panel4.BorderThickness = 1;
+            this.panel4.Controls.Add(this.vTo);
+            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Controls.Add(this.vTill);
+            this.panel4.Controls.Add(this.pictureBox2);
+            this.panel4.Location = new System.Drawing.Point(37, 139);
+            this.panel4.Name = "panel4";
+            this.panel4.ShowBorders = true;
+            this.panel4.Size = new System.Drawing.Size(228, 153);
+            this.panel4.TabIndex = 1;
             // 
             // vTo
             // 
@@ -580,22 +583,22 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
-            // bunifuPanel2
+            // panel1
             // 
-            this.bunifuPanel2.BackgroundColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel2.BackgroundImage")));
-            this.bunifuPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel2.BorderColor = System.Drawing.Color.DarkGray;
-            this.bunifuPanel2.BorderRadius = 3;
-            this.bunifuPanel2.BorderThickness = 1;
-            this.bunifuPanel2.Controls.Add(this.label3);
-            this.bunifuPanel2.Controls.Add(this.vVignette);
-            this.bunifuPanel2.Controls.Add(this.pictureBox1);
-            this.bunifuPanel2.Location = new System.Drawing.Point(37, 9);
-            this.bunifuPanel2.Name = "bunifuPanel2";
-            this.bunifuPanel2.ShowBorders = true;
-            this.bunifuPanel2.Size = new System.Drawing.Size(187, 112);
-            this.bunifuPanel2.TabIndex = 0;
+            this.panel1.BackgroundColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.BorderColor = System.Drawing.Color.DarkGray;
+            this.panel1.BorderRadius = 3;
+            this.panel1.BorderThickness = 1;
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.vVignette);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Location = new System.Drawing.Point(37, 9);
+            this.panel1.Name = "panel1";
+            this.panel1.ShowBorders = true;
+            this.panel1.Size = new System.Drawing.Size(187, 112);
+            this.panel1.TabIndex = 0;
             // 
             // label3
             // 
@@ -922,12 +925,74 @@
             this.ratingStats.Value = 2;
             this.ratingStats.ValueChanged += new System.EventHandler<Bunifu.UI.WinForms.BunifuRating.ValueChangedEventArgs>(this.ratingStats_ValueChanged);
             // 
+            // theme
+            // 
+            this.theme.BackColor = System.Drawing.Color.Transparent;
+            this.theme.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(174)))), ((int)(((byte)(235)))));
+            this.theme.BorderColor = System.Drawing.Color.DimGray;
+            this.theme.BorderRadius = 13;
+            this.theme.Color = System.Drawing.Color.DimGray;
+            this.theme.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
+            this.theme.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.theme.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.theme.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.theme.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.theme.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
+            this.theme.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.theme.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thick;
+            this.theme.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.theme.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.theme.FillDropDown = true;
+            this.theme.FillIndicator = true;
+            this.theme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.theme.Font = new System.Drawing.Font("Lucida Sans Unicode", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.theme.ForeColor = System.Drawing.Color.Black;
+            this.theme.FormattingEnabled = true;
+            this.theme.Icon = null;
+            this.theme.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.theme.IndicatorColor = System.Drawing.Color.DarkGray;
+            this.theme.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.theme.IndicatorThickness = 2;
+            this.theme.IsDropdownOpened = false;
+            this.theme.ItemBackColor = System.Drawing.Color.White;
+            this.theme.ItemBorderColor = System.Drawing.Color.White;
+            this.theme.ItemForeColor = System.Drawing.Color.Black;
+            this.theme.ItemHeight = 26;
+            this.theme.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
+            this.theme.ItemHighLightForeColor = System.Drawing.Color.White;
+            this.theme.Items.AddRange(new object[] {
+            "Автоматично",
+            "Светла",
+            "Тъмна",
+            "Случайна",
+            "По подразбиране"});
+            this.theme.ItemTopMargin = 3;
+            this.theme.Location = new System.Drawing.Point(2, 499);
+            this.theme.Name = "theme";
+            this.theme.Size = new System.Drawing.Size(176, 32);
+            this.theme.TabIndex = 10;
+            this.theme.Text = "Тема";
+            this.theme.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.theme.TextLeftMargin = 5;
+            this.theme.SelectedIndexChanged += new System.EventHandler(this.theme_SelectedIndexChanged);
+            // 
+            // welcomeText
+            // 
+            this.welcomeText.AutoSize = true;
+            this.welcomeText.Location = new System.Drawing.Point(492, 9);
+            this.welcomeText.Name = "welcomeText";
+            this.welcomeText.Size = new System.Drawing.Size(91, 14);
+            this.welcomeText.TabIndex = 11;
+            this.welcomeText.Text = "Зареждане...";
+            // 
             // startUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(174)))), ((int)(((byte)(235)))));
             this.ClientSize = new System.Drawing.Size(1019, 617);
+            this.Controls.Add(this.welcomeText);
+            this.Controls.Add(this.theme);
             this.Controls.Add(this.ratingStats);
             this.Controls.Add(this.penalties);
             this.Controls.Add(this.infoLabel);
@@ -945,23 +1010,23 @@
             this.Text = "Начално Меню | Vignette Check BG";
             this.Load += new System.EventHandler(this.startUI_Load);
             this.mainPanel.ResumeLayout(false);
-            this.bunifuPanel6.ResumeLayout(false);
-            this.bunifuPanel6.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            this.bunifuPanel5.ResumeLayout(false);
-            this.bunifuPanel5.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.bunifuPanel4.ResumeLayout(false);
-            this.bunifuPanel4.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.bunifuPanel3.ResumeLayout(false);
-            this.bunifuPanel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.bunifuPanel1.ResumeLayout(false);
-            this.bunifuPanel1.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.bunifuPanel2.ResumeLayout(false);
-            this.bunifuPanel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -979,29 +1044,29 @@
         private System.Windows.Forms.Label label1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton checkVignette;
         private Bunifu.UI.WinForms.BunifuPanel mainPanel;
-        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;
+        private Bunifu.UI.WinForms.BunifuPanel panel1;
         public System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Label vVignette;
-        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
+        private Bunifu.UI.WinForms.BunifuPanel panel4;
         public System.Windows.Forms.Label vTill;
         public System.Windows.Forms.PictureBox pictureBox2;
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label label3;
-        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel3;
+        private Bunifu.UI.WinForms.BunifuPanel panel2;
         public System.Windows.Forms.Label label4;
         public System.Windows.Forms.Label licPlate;
         public System.Windows.Forms.PictureBox pictureBox3;
-        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel4;
+        private Bunifu.UI.WinForms.BunifuPanel panel3;
         public System.Windows.Forms.Label label5;
         public System.Windows.Forms.Label mdtType;
         public System.Windows.Forms.PictureBox pictureBox4;
         public System.Windows.Forms.Label vTo;
         public System.Windows.Forms.Label label6;
-        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel5;
+        private Bunifu.UI.WinForms.BunifuPanel panel5;
         public System.Windows.Forms.Label label7;
         public System.Windows.Forms.Label price;
         public System.Windows.Forms.PictureBox pictureBox5;
-        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel6;
+        private Bunifu.UI.WinForms.BunifuPanel panel6;
         public System.Windows.Forms.Label label8;
         public System.Windows.Forms.Label vignetteNum;
         public System.Windows.Forms.PictureBox pictureBox6;
@@ -1009,6 +1074,9 @@
         private System.Windows.Forms.Label infoLabel;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 penalties;
         private Bunifu.UI.WinForms.BunifuRating ratingStats;
+        private Bunifu.UI.WinForms.BunifuDropdown theme;
+        private System.Windows.Forms.Label welcomeText;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

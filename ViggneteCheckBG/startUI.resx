@@ -173,7 +173,7 @@
         7DX7vhLj0lYgq0rMzMzMzMz27sNKCwAAgMrh8BfqAxdPZewmiwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuPanel6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="panel6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALsAAABwCAYAAABGvwEdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGXSURBVHhe7dOxUcNAFEVRlaIyCAkpgzLohnCliFJcAiFl
@@ -186,7 +186,7 @@
         ZlfaI/T5+7FSh4Jt+wecwNScAf4g4QAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuPanel5.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="panel5.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALsAAABwCAYAAABGvwEdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGXSURBVHhe7dOxUcNAFEVRlaIyCAkpgzLohnCliFJcAiFl
@@ -199,7 +199,7 @@
         ZlfaI/T5+7FSh4Jt+wecwNScAf4g4QAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuPanel4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="panel3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALsAAABwCAYAAABGvwEdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGXSURBVHhe7dOxUcNAFEVRlaIyCAkpgzLohnCliFJcAiFl
@@ -212,7 +212,7 @@
         ZlfaI/T5+7FSh4Jt+wecwNScAf4g4QAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuPanel3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="panel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALsAAABwCAYAAABGvwEdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGXSURBVHhe7dOxUcNAFEVRlaIyCAkpgzLohnCliFJcAiFl
@@ -225,7 +225,7 @@
         ZlfaI/T5+7FSh4Jt+wecwNScAf4g4QAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="panel4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAOQAAACZCAYAAAA/65aSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIpSURBVHhe7dOxUcNAFEVRleIyCAkpgzLohnCliFJcAiFl
@@ -240,7 +240,7 @@
         Tw3u+36de1sncKIxxmX297fOx8P7LPT3XqmZnbt7jPP7sXIEGrbtHzm9vOLxZXRcAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuPanel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALsAAABwCAYAAABGvwEdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGXSURBVHhe7dOxUcNAFEVRlaIyCAkpgzLohnCliFJcAiFl
@@ -2091,4 +2091,7 @@
         SUVORK5CYII=
 </value>
   </data>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>286, 17</value>
+  </metadata>
 </root>

@@ -17,6 +17,12 @@ namespace ViggneteCheckBG
 {
     public partial class startUI : Form
     {
+        Error newEror = new Error();
+        public static string autoTheme = "Автоматично";
+        public static string darkTheme = "Тъмна";
+        public static string lightTheme = "Светла";
+        public static string defaultTheme = "По подразбиране";
+        public static string randomTheme = "Случайна";
         public class vignetteJson
         {
             public string status { get; set; }
@@ -42,10 +48,25 @@ namespace ViggneteCheckBG
         {
             Application.Exit();
         }
-
+        private void timer1_Tick(object sender,EventArgs e)
+        {
+            if (DateTime.Now.Hour >= 5 && DateTime.Now.Hour <= 18)
+            {
+                welcomeText.Text = @"Добро утро," + Environment.UserName + Environment.NewLine +
+                     DateTime.Now.ToLongTimeString();
+            }
+            else
+            {
+                welcomeText.Text = @"Добро утро," + Environment.UserName + Environment.NewLine +
+                     DateTime.Now.ToLongTimeString();
+            }
+        }
         private void startUI_Load(object sender, EventArgs e)
         {
-            
+            timer1.Interval = (500);
+            timer1.Tick += new EventHandler(timer1_Tick);
+            timer1.Start();
+
             infoLabel.Text = @"Софтуера е разработен
 От: v-devs.eu
 Версия: " + Properties.Settings.Default.softwareVersion;
@@ -59,7 +80,9 @@ namespace ViggneteCheckBG
             }
             else
             {
-                MessageBox.Show("Не съществува МПС с такъв номер");
+                Error.errorText = "Не съществува МПС с такъв номер";
+                Error.getError = "invalidVehicle";
+                newEror.ShowDialog();
             }
         }
         public void checkLicense(string licenseNum)
@@ -149,7 +172,6 @@ namespace ViggneteCheckBG
 
         private void licensing1_Load(object sender, EventArgs e)
         {
-
         }
 
         private void ratingStats_ValueChanged(object sender, Bunifu.UI.WinForms.BunifuRating.ValueChangedEventArgs e)
@@ -161,6 +183,46 @@ namespace ViggneteCheckBG
             else
             {
                 MessageBox.Show("Благодарим ви за оценката !", "Vignette Check BG");
+            }
+        }
+
+        private void theme_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(theme.Text == defaultTheme)
+            {
+                this.BackColor = Color.FromArgb(52, 174, 235);
+            }
+            if(theme.Text == darkTheme) {
+                this.BackColor = Color.FromArgb(17, 30, 49);
+                panel1.ForeColor = Color.FromArgb(128, 191, 169);
+                panel2.ForeColor = Color.FromArgb(128, 191, 169);
+                panel3.ForeColor = Color.FromArgb(128, 191, 169);
+                panel4.ForeColor = Color.FromArgb(128, 191, 169);
+                panel5.ForeColor = Color.FromArgb(128, 191, 169);
+                panel6.ForeColor = Color.FromArgb(128, 191, 169);
+                label1.ForeColor = Color.FromArgb(128, 191, 169);
+                welcomeText.ForeColor = Color.FromArgb(128, 191, 169);
+                infoLabel.ForeColor = Color.FromArgb(128, 191, 169);
+            }
+            if (theme.Text == autoTheme)
+            {
+                if(DateTime.Now.Hour > 6 && DateTime.Now.Hour < 18)
+                {
+                    this.BackColor = Color.FromArgb(255, 255, 255);
+                }
+                else
+                {
+                    this.BackColor = Color.FromArgb(17, 30, 49);
+                }
+            }
+            if(theme.Text == lightTheme)
+            {
+                this.BackColor = Color.FromArgb(255, 255, 255);
+            }
+            if (theme.Text == randomTheme)
+            {
+                Random getRandom = new Random();
+                this.BackColor = Color.FromArgb(getRandom.Next(1, 100), getRandom.Next(1, 100), getRandom.Next(1, 100));
             }
         }
     }
