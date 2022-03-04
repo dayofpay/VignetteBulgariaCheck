@@ -57,7 +57,7 @@ namespace ViggneteCheckBG
             }
             else
             {
-                welcomeText.Text = @"Добро вечер," + Environment.UserName + Environment.NewLine +
+                welcomeText.Text = @"Добър вечер," + Environment.UserName + Environment.NewLine +
                      DateTime.Now.ToLongTimeString();
             }
         }
