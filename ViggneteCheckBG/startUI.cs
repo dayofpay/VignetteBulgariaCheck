@@ -52,12 +52,12 @@ namespace ViggneteCheckBG
         {
             if (DateTime.Now.Hour >= 5 && DateTime.Now.Hour <= 18)
             {
-                welcomeText.Text = @"Добро утро," + Environment.UserName + Environment.NewLine +
+                welcomeText.Text = @"Добър ден," + Environment.UserName + Environment.NewLine +
                      DateTime.Now.ToLongTimeString();
             }
             else
             {
-                welcomeText.Text = @"Добро утро," + Environment.UserName + Environment.NewLine +
+                welcomeText.Text = @"Добро вечер," + Environment.UserName + Environment.NewLine +
                      DateTime.Now.ToLongTimeString();
             }
         }
