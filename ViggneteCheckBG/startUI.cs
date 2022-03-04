@@ -222,7 +222,7 @@ namespace ViggneteCheckBG
             if (theme.Text == randomTheme)
             {
                 Random getRandom = new Random();
-                this.BackColor = Color.FromArgb(getRandom.Next(1, 100), getRandom.Next(1, 100), getRandom.Next(1, 100));
+                this.BackColor = Color.FromArgb(getRandom.Next(1, 255), getRandom.Next(1, 255), getRandom.Next(1, 255));
             }
         }
     }
