@@ -20,8 +20,8 @@ namespace ViggneteCheckBG
             int nTopRect,      // y-кординати of на горен десен ъгъл
             int nRightRect,    // x-кординати of на долен ляв ъгъл
             int nBottomRect,   // y-кординати of на долен десен ъгъл
-            int nWidthEllipse, // Височина на елипса
-            int nHeightEllipse // Дължина на елипса
+            int nWidthEllipse, // Ширина на елипса
+            int nHeightEllipse // Височина на елипса
         );
         public static string getError
         {
