@@ -68,7 +68,7 @@ namespace ViggneteCheckBG
             timer1.Start();
 
             infoLabel.Text = @"Софтуера е разработен
-От: v-devs.eu
+От: v-devs.online
 Версия: " + Properties.Settings.Default.softwareVersion;
         }
 
@@ -77,12 +77,16 @@ namespace ViggneteCheckBG
             if(licenseNumber.Text.Length > 4)
             {
                 checkLicense(licenseNumber.Text);
+                alert.Show(this, "Успешно проверихте МПС с рег. номер "+licenseNumber.Text, Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success);
             }
             else
             {
+                /* Стар Код
                 Error.errorText = "Не съществува МПС с такъв номер";
                 Error.getError = "invalidVehicle";
                 newEror.ShowDialog();
+                */
+                alert.Show(this, "Не съществува МПС с такъв номер", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error);
             }
         }
         public void checkLicense(string licenseNum)
@@ -101,7 +105,13 @@ namespace ViggneteCheckBG
                 validVignette = false;
                 vVignette.Text = "Няма Винетка !";
                 vTill.Text = "Няма винетка !";
-                MessageBox.Show("Няма намерена винетка !", "Vignette Check BG | No Vignette Found For This License Number ! ");
+                licPlate.Text = "Няма винетка !";
+                mdtType.Text = "Няма винетка !";
+                vTill.Text = "Няма винетка !";
+                vTo.Text = "Няма винетка !";
+                price.Text = "Няма винетка !";
+                vignetteNum.Text = "Няма винетка !";
+                alert.Show(this, "Това МПС не разполага с винетка !", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error);
             }
             else
             {
@@ -156,7 +166,7 @@ namespace ViggneteCheckBG
 
         private void bunifuButton21_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Вие вече сте в това меню !", "Vignette Check BG");
+            alert.Show(this, "Вие вече сте в това меню !", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information);
         }
 
         private void licenseNumber_TextChanged(object sender, EventArgs e)
@@ -224,6 +234,18 @@ namespace ViggneteCheckBG
                 Random getRandom = new Random();
                 this.BackColor = Color.FromArgb(getRandom.Next(1, 255), getRandom.Next(1, 255), getRandom.Next(1, 255));
             }
+        }
+
+        private void buttonCheckViggnette_Click(object sender, EventArgs e)
+        {
+            alert.Show(this, "Вие вече сте в това меню !", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information);
+
+        }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            katGlobi globi = new katGlobi();
+            globi.ShowDialog();
         }
     }
 

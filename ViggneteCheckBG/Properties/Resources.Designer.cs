@@ -153,6 +153,16 @@ namespace ViggneteCheckBG.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap credit_card_interest_512px {
+            get {
+                object obj = ResourceManager.GetObject("credit_card_interest_512px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Done_100px {
             get {
                 object obj = ResourceManager.GetObject("Done_100px", resourceCulture);
@@ -176,6 +186,16 @@ namespace ViggneteCheckBG.Properties {
         internal static System.Drawing.Bitmap id_not_verified_40px {
             get {
                 object obj = ResourceManager.GetObject("id_not_verified_40px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap people_in_car_512px {
+            get {
+                object obj = ResourceManager.GetObject("people_in_car_512px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

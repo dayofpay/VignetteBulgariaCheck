@@ -271,6 +271,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="car_64px.ico" />
+    <None Include="Resources\credit_card_interest_512px.png" />
+    <None Include="Resources\people_in_car_512px.png" />
     <None Include="Resources\id_not_verified_40px.png" />
     <None Include="Resources\Done_100px.png" />
     <None Include="Resources\spam_40px.png" />
@@ -281,6 +283,5 @@
     <ItemGroup>
       <MoveToLibFolder Include="$(OutputPath)*.dll ; $(OutputPath)*.pdb ; $(OutputPath)*.xml" />
     </ItemGroup>
-    <Move SourceFiles="@(MoveToLibFolder)" DestinationFolder="$(OutputPath)lib" OverwriteReadOnlyFiles="true" />
   </Target>
 </Project>
