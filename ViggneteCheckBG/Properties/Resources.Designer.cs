@@ -93,6 +93,16 @@ namespace ViggneteCheckBG.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bulgaria_480px {
+            get {
+                object obj = ResourceManager.GetObject("bulgaria_480px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap calendar_10_48px {
             get {
                 object obj = ResourceManager.GetObject("calendar_10_48px", resourceCulture);
@@ -146,6 +156,26 @@ namespace ViggneteCheckBG.Properties {
         internal static System.Drawing.Bitmap co2_64px {
             get {
                 object obj = ResourceManager.GetObject("co2_64px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap confiscate {
+            get {
+                object obj = ResourceManager.GetObject("confiscate", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap country_480px {
+            get {
+                object obj = ResourceManager.GetObject("country_480px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

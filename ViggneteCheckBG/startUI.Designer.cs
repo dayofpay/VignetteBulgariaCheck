@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(startUI));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.bordlessForm = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.exitButton = new Guna.UI2.WinForms.Guna2ControlBox();
             this.alert = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
@@ -49,6 +49,14 @@
             this.checkPunishments = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.buttonCheckViggnette = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.mainPanel = new Bunifu.UI.WinForms.BunifuPanel();
+            this.countryPanel = new Bunifu.UI.WinForms.BunifuPanel();
+            this.countryLabel = new System.Windows.Forms.Label();
+            this.countryText = new System.Windows.Forms.Label();
+            this.countryImgBox = new System.Windows.Forms.PictureBox();
+            this.confsPanel = new Bunifu.UI.WinForms.BunifuPanel();
+            this.confsStatusLabel = new System.Windows.Forms.Label();
+            this.confsStatus = new System.Windows.Forms.Label();
+            this.confsImage = new System.Windows.Forms.PictureBox();
             this.moreInfo = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel6 = new Bunifu.UI.WinForms.BunifuPanel();
             this.label8 = new System.Windows.Forms.Label();
@@ -80,6 +88,10 @@
             this.panelButtons = new Bunifu.UI.WinForms.BunifuPanel();
             this.licenseNumber = new Bunifu.UI.WinForms.BunifuTextBox();
             this.mainPanel.SuspendLayout();
+            this.countryPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.countryImgBox)).BeginInit();
+            this.confsPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.confsImage)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel5.SuspendLayout();
@@ -199,7 +211,7 @@
             this.infoLabel.Name = "infoLabel";
             this.infoLabel.Size = new System.Drawing.Size(154, 56);
             this.infoLabel.TabIndex = 7;
-            this.infoLabel.Text = "Софтуера е разработен\r\nОт: v-devs.online\r\nВерсия: 1.3\r\n\r\n";
+            this.infoLabel.Text = "Софтуера е разработен\r\nОт: v-devs.online\r\nВерсия: 1.4\r\n\r\n";
             // 
             // ratingStats
             // 
@@ -303,11 +315,11 @@
             this.checkPunishments.ColorContrastOnClick = 45;
             this.checkPunishments.ColorContrastOnHover = 45;
             this.checkPunishments.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.checkPunishments.CustomizableEdges = borderEdges4;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.checkPunishments.CustomizableEdges = borderEdges1;
             this.checkPunishments.DialogResult = System.Windows.Forms.DialogResult.None;
             this.checkPunishments.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.checkPunishments.DisabledFillColor = System.Drawing.Color.Empty;
@@ -395,11 +407,11 @@
             this.buttonCheckViggnette.ColorContrastOnClick = 45;
             this.buttonCheckViggnette.ColorContrastOnHover = 45;
             this.buttonCheckViggnette.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.buttonCheckViggnette.CustomizableEdges = borderEdges5;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.buttonCheckViggnette.CustomizableEdges = borderEdges2;
             this.buttonCheckViggnette.DialogResult = System.Windows.Forms.DialogResult.None;
             this.buttonCheckViggnette.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.buttonCheckViggnette.DisabledFillColor = System.Drawing.Color.Empty;
@@ -476,6 +488,8 @@
             this.mainPanel.BorderColor = System.Drawing.Color.Gray;
             this.mainPanel.BorderRadius = 5;
             this.mainPanel.BorderThickness = 2;
+            this.mainPanel.Controls.Add(this.countryPanel);
+            this.mainPanel.Controls.Add(this.confsPanel);
             this.mainPanel.Controls.Add(this.moreInfo);
             this.mainPanel.Controls.Add(this.panel6);
             this.mainPanel.Controls.Add(this.panel5);
@@ -489,6 +503,97 @@
             this.mainPanel.Size = new System.Drawing.Size(795, 326);
             this.mainPanel.TabIndex = 6;
             this.mainPanel.Visible = false;
+            this.mainPanel.Click += new System.EventHandler(this.mainPanel_Click);
+            // 
+            // countryPanel
+            // 
+            this.countryPanel.BackgroundColor = System.Drawing.Color.Transparent;
+            this.countryPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("countryPanel.BackgroundImage")));
+            this.countryPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.countryPanel.BorderColor = System.Drawing.Color.DarkGray;
+            this.countryPanel.BorderRadius = 3;
+            this.countryPanel.BorderThickness = 1;
+            this.countryPanel.Controls.Add(this.countryLabel);
+            this.countryPanel.Controls.Add(this.countryText);
+            this.countryPanel.Controls.Add(this.countryImgBox);
+            this.countryPanel.Location = new System.Drawing.Point(424, 155);
+            this.countryPanel.Name = "countryPanel";
+            this.countryPanel.ShowBorders = true;
+            this.countryPanel.Size = new System.Drawing.Size(166, 141);
+            this.countryPanel.TabIndex = 7;
+            // 
+            // countryLabel
+            // 
+            this.countryLabel.AutoSize = true;
+            this.countryLabel.Location = new System.Drawing.Point(56, 63);
+            this.countryLabel.Name = "countryLabel";
+            this.countryLabel.Size = new System.Drawing.Size(56, 14);
+            this.countryLabel.TabIndex = 3;
+            this.countryLabel.Text = "Държава";
+            // 
+            // countryText
+            // 
+            this.countryText.AutoSize = true;
+            this.countryText.Location = new System.Drawing.Point(8, 97);
+            this.countryText.Name = "countryText";
+            this.countryText.Size = new System.Drawing.Size(84, 14);
+            this.countryText.TabIndex = 1;
+            this.countryText.Text = "${response}";
+            // 
+            // countryImgBox
+            // 
+            this.countryImgBox.Image = global::ViggneteCheckBG.Properties.Resources.bulgaria_480px;
+            this.countryImgBox.Location = new System.Drawing.Point(35, 12);
+            this.countryImgBox.Name = "countryImgBox";
+            this.countryImgBox.Size = new System.Drawing.Size(106, 48);
+            this.countryImgBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.countryImgBox.TabIndex = 0;
+            this.countryImgBox.TabStop = false;
+            // 
+            // confsPanel
+            // 
+            this.confsPanel.BackgroundColor = System.Drawing.Color.Transparent;
+            this.confsPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("confsPanel.BackgroundImage")));
+            this.confsPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.confsPanel.BorderColor = System.Drawing.Color.DarkGray;
+            this.confsPanel.BorderRadius = 3;
+            this.confsPanel.BorderThickness = 1;
+            this.confsPanel.Controls.Add(this.confsStatusLabel);
+            this.confsPanel.Controls.Add(this.confsStatus);
+            this.confsPanel.Controls.Add(this.confsImage);
+            this.confsPanel.Location = new System.Drawing.Point(252, 155);
+            this.confsPanel.Name = "confsPanel";
+            this.confsPanel.ShowBorders = true;
+            this.confsPanel.Size = new System.Drawing.Size(166, 141);
+            this.confsPanel.TabIndex = 6;
+            // 
+            // confsStatusLabel
+            // 
+            this.confsStatusLabel.AutoSize = true;
+            this.confsStatusLabel.Location = new System.Drawing.Point(8, 63);
+            this.confsStatusLabel.Name = "confsStatusLabel";
+            this.confsStatusLabel.Size = new System.Drawing.Size(154, 14);
+            this.confsStatusLabel.TabIndex = 3;
+            this.confsStatusLabel.Text = "Статус на конфискация";
+            // 
+            // confsStatus
+            // 
+            this.confsStatus.AutoSize = true;
+            this.confsStatus.Location = new System.Drawing.Point(8, 97);
+            this.confsStatus.Name = "confsStatus";
+            this.confsStatus.Size = new System.Drawing.Size(84, 14);
+            this.confsStatus.TabIndex = 1;
+            this.confsStatus.Text = "${response}";
+            // 
+            // confsImage
+            // 
+            this.confsImage.Image = global::ViggneteCheckBG.Properties.Resources.confiscate;
+            this.confsImage.Location = new System.Drawing.Point(35, 12);
+            this.confsImage.Name = "confsImage";
+            this.confsImage.Size = new System.Drawing.Size(106, 48);
+            this.confsImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.confsImage.TabIndex = 0;
+            this.confsImage.TabStop = false;
             // 
             // moreInfo
             // 
@@ -507,7 +612,7 @@
             this.moreInfo.Font = new System.Drawing.Font("Sitka Text", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.moreInfo.ForeColor = System.Drawing.Color.Aqua;
             this.moreInfo.HoverState.Parent = this.moreInfo;
-            this.moreInfo.Location = new System.Drawing.Point(596, 282);
+            this.moreInfo.Location = new System.Drawing.Point(604, 290);
             this.moreInfo.Name = "moreInfo";
             this.moreInfo.ShadowDecoration.Parent = this.moreInfo;
             this.moreInfo.Size = new System.Drawing.Size(180, 31);
@@ -526,7 +631,7 @@
             this.panel6.Controls.Add(this.label8);
             this.panel6.Controls.Add(this.vignetteNum);
             this.panel6.Controls.Add(this.pictureBox6);
-            this.panel6.Location = new System.Drawing.Point(532, 151);
+            this.panel6.Location = new System.Drawing.Point(604, 13);
             this.panel6.Name = "panel6";
             this.panel6.ShowBorders = true;
             this.panel6.Size = new System.Drawing.Size(187, 112);
@@ -571,10 +676,10 @@
             this.panel5.Controls.Add(this.label7);
             this.panel5.Controls.Add(this.price);
             this.panel5.Controls.Add(this.pictureBox5);
-            this.panel5.Location = new System.Drawing.Point(281, 151);
+            this.panel5.Location = new System.Drawing.Point(605, 143);
             this.panel5.Name = "panel5";
             this.panel5.ShowBorders = true;
-            this.panel5.Size = new System.Drawing.Size(187, 112);
+            this.panel5.Size = new System.Drawing.Size(187, 141);
             this.panel5.TabIndex = 4;
             // 
             // label7
@@ -616,7 +721,7 @@
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.mdtType);
             this.panel3.Controls.Add(this.pictureBox4);
-            this.panel3.Location = new System.Drawing.Point(532, 9);
+            this.panel3.Location = new System.Drawing.Point(411, 13);
             this.panel3.Name = "panel3";
             this.panel3.ShowBorders = true;
             this.panel3.Size = new System.Drawing.Size(187, 112);
@@ -661,7 +766,7 @@
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.licPlate);
             this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Location = new System.Drawing.Point(281, 9);
+            this.panel2.Location = new System.Drawing.Point(218, 13);
             this.panel2.Name = "panel2";
             this.panel2.ShowBorders = true;
             this.panel2.Size = new System.Drawing.Size(187, 112);
@@ -708,7 +813,7 @@
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.vTill);
             this.panel4.Controls.Add(this.pictureBox2);
-            this.panel4.Location = new System.Drawing.Point(37, 139);
+            this.panel4.Location = new System.Drawing.Point(12, 143);
             this.panel4.Name = "panel4";
             this.panel4.ShowBorders = true;
             this.panel4.Size = new System.Drawing.Size(228, 153);
@@ -771,7 +876,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.vVignette);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(37, 9);
+            this.panel1.Location = new System.Drawing.Point(12, 13);
             this.panel1.Name = "panel1";
             this.panel1.ShowBorders = true;
             this.panel1.Size = new System.Drawing.Size(187, 112);
@@ -825,11 +930,11 @@
             this.checkVignette.ColorContrastOnClick = 45;
             this.checkVignette.ColorContrastOnHover = 45;
             this.checkVignette.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.checkVignette.CustomizableEdges = borderEdges6;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.checkVignette.CustomizableEdges = borderEdges3;
             this.checkVignette.DialogResult = System.Windows.Forms.DialogResult.None;
             this.checkVignette.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.checkVignette.DisabledFillColor = System.Drawing.Color.Empty;
@@ -948,26 +1053,26 @@
             this.licenseNumber.Modified = false;
             this.licenseNumber.Multiline = false;
             this.licenseNumber.Name = "licenseNumber";
-            stateProperties5.BorderColor = System.Drawing.Color.DeepSkyBlue;
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.licenseNumber.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.licenseNumber.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.licenseNumber.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.Lime;
-            stateProperties8.FillColor = System.Drawing.Color.Gray;
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.licenseNumber.OnIdleState = stateProperties8;
+            stateProperties1.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.licenseNumber.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.licenseNumber.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.licenseNumber.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Lime;
+            stateProperties4.FillColor = System.Drawing.Color.Gray;
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.licenseNumber.OnIdleState = stateProperties4;
             this.licenseNumber.Padding = new System.Windows.Forms.Padding(3);
             this.licenseNumber.PasswordChar = '\0';
             this.licenseNumber.PlaceholderForeColor = System.Drawing.Color.Maroon;
@@ -1017,6 +1122,12 @@
             this.Text = "Начално Меню | Vignette Check BG";
             this.Load += new System.EventHandler(this.startUI_Load);
             this.mainPanel.ResumeLayout(false);
+            this.countryPanel.ResumeLayout(false);
+            this.countryPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.countryImgBox)).EndInit();
+            this.confsPanel.ResumeLayout(false);
+            this.confsPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.confsImage)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -1084,6 +1195,14 @@
         private System.Windows.Forms.Timer timer1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton buttonCheckViggnette;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton checkPunishments;
+        private Bunifu.UI.WinForms.BunifuPanel confsPanel;
+        public System.Windows.Forms.Label confsStatusLabel;
+        public System.Windows.Forms.Label confsStatus;
+        public System.Windows.Forms.PictureBox confsImage;
+        private Bunifu.UI.WinForms.BunifuPanel countryPanel;
+        public System.Windows.Forms.Label countryLabel;
+        public System.Windows.Forms.Label countryText;
+        public System.Windows.Forms.PictureBox countryImgBox;
     }
 }
 

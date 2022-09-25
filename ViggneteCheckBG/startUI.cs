@@ -111,6 +111,10 @@ namespace ViggneteCheckBG
                 vTo.Text = "Няма винетка !";
                 price.Text = "Няма винетка !";
                 vignetteNum.Text = "Няма винетка !";
+                countryText.Text = "Неизвестно";
+                countryImgBox.Image = Properties.Resources.country_480px;
+                countryImgBox.Update();
+                confsStatus.Text = "Неизвестно";
                 alert.Show(this, "Това МПС не разполага с винетка !", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error);
             }
             else
@@ -123,6 +127,28 @@ namespace ViggneteCheckBG
                 string vPrice = (string)jsReader["vignette"]["price"];
                 string vNum = (string)jsReader["vignette"]["vignetteNumber"];
                 string em = (string)jsReader["vignette"]["emissionsClass"];
+                string confiscateStatus = (string)jsReader["vignette"]["exempt"];
+                string country = (string)jsReader["vignette"]["country"];
+                if(country == "BG")
+                {
+                    countryImgBox.Image = Properties.Resources.bulgaria_480px;
+                    countryImgBox.Update();
+                    countryText.Text = "България";
+                }
+                else
+                {
+                    countryText.Text = country;
+                    countryImgBox.Image = Properties.Resources.country_480px;
+                    countryImgBox.Update();
+                }
+                if(Convert.ToBoolean(confiscateStatus) == true)
+                {
+                    confsStatus.Text = "Конфискуван";
+                }
+                else
+                {
+                    confsStatus.Text = "Не е конфискуван";
+                }
                 if(em == null)
                 {
                     moreData.emisions = "Няма информация";
@@ -212,7 +238,13 @@ namespace ViggneteCheckBG
                 panel6.ForeColor = Color.FromArgb(128, 191, 169);
                 label1.ForeColor = Color.FromArgb(128, 191, 169);
                 welcomeText.ForeColor = Color.FromArgb(128, 191, 169);
+                confsStatusLabel.ForeColor = Color.FromArgb(128, 191, 169);
+                confsPanel.ForeColor = Color.FromArgb(128, 191, 169);
+                confsStatus.ForeColor = Color.FromArgb(128, 191, 169);
                 infoLabel.ForeColor = Color.FromArgb(128, 191, 169);
+                countryLabel.ForeColor = Color.FromArgb(128, 191, 169);
+                countryPanel.ForeColor = Color.FromArgb(128, 191, 169);
+                countryText.ForeColor = Color.FromArgb(128, 191, 169);
             }
             if (theme.Text == autoTheme)
             {
@@ -247,6 +279,10 @@ namespace ViggneteCheckBG
             katGlobi globi = new katGlobi();
             globi.ShowDialog();
         }
-    }
 
+        private void mainPanel_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

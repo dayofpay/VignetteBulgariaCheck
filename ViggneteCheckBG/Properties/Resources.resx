@@ -133,11 +133,11 @@
   <data name="approval_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\approval_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="people_in_car_512px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\people_in_car_512px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cancel_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancel_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Done_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Done_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="spam_40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\spam_40px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bill_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bill_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,6 +148,9 @@
   <data name="green_square_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\green_square_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="confiscate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\confiscate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="calendar_10_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\calendar_10_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,16 +160,22 @@
   <data name="car_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\car_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cancel_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cancel_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="people_in_car_512px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\people_in_car_512px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="car_badge_80px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\car_badge_80px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="spam_40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\spam_40px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="credit_card_interest_512px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\credit_card_interest_512px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bulgaria_480px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bulgaria_480px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Done_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Done_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="country_480px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\country_480px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

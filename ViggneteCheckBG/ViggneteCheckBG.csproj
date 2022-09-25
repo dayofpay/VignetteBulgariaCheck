@@ -271,6 +271,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="car_64px.ico" />
+    <None Include="Resources\country_480px.png" />
+    <None Include="Resources\bulgaria_480px.png" />
+    <None Include="Resources\confiscate.png" />
     <None Include="Resources\credit_card_interest_512px.png" />
     <None Include="Resources\people_in_car_512px.png" />
     <None Include="Resources\id_not_verified_40px.png" />
