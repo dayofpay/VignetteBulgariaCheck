@@ -25,7 +25,7 @@ namespace ViggneteCheckBG.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("1.4")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1.5")]
         public string softwareVersion {
             get {
                 return ((string)(this["softwareVersion"]));

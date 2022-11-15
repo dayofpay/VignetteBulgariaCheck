@@ -121,6 +121,32 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bunifuPanel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAKIAAABwCAYAAACdBKs/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGXSURBVHhe7dKxUcNAFEVRleIyCAkpgzLohnCliFJcAiFl
+        mLVnEzcg3+CcmTfS3/hukDHGuBzH8T13MztxM71xWRlu23z4mQ9f64RTzOY+932/rvMR4m39wqme2hMi
+        ryJEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQI
+        kQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRB
+        iCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJ
+        QiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJ
+        ECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkvDU3r7v17m3dcIpxhiX2d3fOh8P77PM33ud
+        ZmftHuH8fqwM4dW27R/6mT/IQr8/OQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="bunifuPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAKIAAABwCAYAAACdBKs/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGXSURBVHhe7dKxUcNAFEVRleIyCAkpgzLohnCliFJcAiFl
+        mLVnEzcg3+CcmTfS3/hukDHGuBzH8T13MztxM71xWRlu23z4mQ9f64RTzOY+932/rvMR4m39wqme2hMi
+        ryJEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQI
+        kQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRB
+        iCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJ
+        QiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJ
+        ECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkvDU3r7v17m3dcIpxhiX2d3fOh8P77PM33ud
+        ZmftHuH8fqwM4dW27R/6mT/IQr8/OQAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="checkPunishments.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALkAAAAmCAYAAACYnTrKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8

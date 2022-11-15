@@ -13,5 +13,8 @@ namespace ViggneteCheckBG
             get;
             set;
         }
+        public static List<string> lastChecked = new List<string>();
+        public static string totalChecks { get; set; }
+        public static String[] htmlTag = { "<br />" };
     }
 }

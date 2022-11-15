@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(startUI));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.bordlessForm = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.exitButton = new Guna.UI2.WinForms.Guna2ControlBox();
             this.alert = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
@@ -46,6 +46,9 @@
             this.theme = new Bunifu.UI.WinForms.BunifuDropdown();
             this.welcomeText = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.vehicleOne = new System.Windows.Forms.Label();
             this.checkPunishments = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.buttonCheckViggnette = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.mainPanel = new Bunifu.UI.WinForms.BunifuPanel();
@@ -87,6 +90,13 @@
             this.checkVignette = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.panelButtons = new Bunifu.UI.WinForms.BunifuPanel();
             this.licenseNumber = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.vehicleTwo = new System.Windows.Forms.Label();
+            this.totalChecks = new System.Windows.Forms.Label();
+            this.bunifuPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.mainPanel.SuspendLayout();
             this.countryPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.countryImgBox)).BeginInit();
@@ -104,6 +114,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.bunifuPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // bordlessForm
@@ -211,7 +223,7 @@
             this.infoLabel.Name = "infoLabel";
             this.infoLabel.Size = new System.Drawing.Size(154, 56);
             this.infoLabel.TabIndex = 7;
-            this.infoLabel.Text = "Софтуера е разработен\r\nОт: v-devs.online\r\nВерсия: 1.4\r\n\r\n";
+            this.infoLabel.Text = "Софтуера е разработен\r\nОт: v-devs.online\r\nВерсия: 1.5\r\n\r\n";
             // 
             // ratingStats
             // 
@@ -296,6 +308,41 @@
             this.welcomeText.TabIndex = 11;
             this.welcomeText.Text = "Зареждане...";
             // 
+            // bunifuPanel1
+            // 
+            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
+            this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel1.BorderColor = System.Drawing.Color.DarkGray;
+            this.bunifuPanel1.BorderRadius = 3;
+            this.bunifuPanel1.BorderThickness = 1;
+            this.bunifuPanel1.Controls.Add(this.pictureBox7);
+            this.bunifuPanel1.Controls.Add(this.vehicleOne);
+            this.bunifuPanel1.Location = new System.Drawing.Point(7, 240);
+            this.bunifuPanel1.Name = "bunifuPanel1";
+            this.bunifuPanel1.ShowBorders = true;
+            this.bunifuPanel1.Size = new System.Drawing.Size(162, 112);
+            this.bunifuPanel1.TabIndex = 14;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::ViggneteCheckBG.Properties.Resources.car_roof_box_512px;
+            this.pictureBox7.Location = new System.Drawing.Point(63, 15);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(36, 41);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 2;
+            this.pictureBox7.TabStop = false;
+            // 
+            // vehicleOne
+            // 
+            this.vehicleOne.AutoSize = true;
+            this.vehicleOne.Location = new System.Drawing.Point(42, 64);
+            this.vehicleOne.Name = "vehicleOne";
+            this.vehicleOne.Size = new System.Drawing.Size(98, 14);
+            this.vehicleOne.TabIndex = 1;
+            this.vehicleOne.Text = "Зареждане ...";
+            // 
             // checkPunishments
             // 
             this.checkPunishments.AllowAnimations = true;
@@ -315,11 +362,11 @@
             this.checkPunishments.ColorContrastOnClick = 45;
             this.checkPunishments.ColorContrastOnHover = 45;
             this.checkPunishments.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.checkPunishments.CustomizableEdges = borderEdges4;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.checkPunishments.CustomizableEdges = borderEdges1;
             this.checkPunishments.DialogResult = System.Windows.Forms.DialogResult.None;
             this.checkPunishments.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.checkPunishments.DisabledFillColor = System.Drawing.Color.Empty;
@@ -407,11 +454,11 @@
             this.buttonCheckViggnette.ColorContrastOnClick = 45;
             this.buttonCheckViggnette.ColorContrastOnHover = 45;
             this.buttonCheckViggnette.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.buttonCheckViggnette.CustomizableEdges = borderEdges5;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.buttonCheckViggnette.CustomizableEdges = borderEdges2;
             this.buttonCheckViggnette.DialogResult = System.Windows.Forms.DialogResult.None;
             this.buttonCheckViggnette.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.buttonCheckViggnette.DisabledFillColor = System.Drawing.Color.Empty;
@@ -930,11 +977,11 @@
             this.checkVignette.ColorContrastOnClick = 45;
             this.checkVignette.ColorContrastOnHover = 45;
             this.checkVignette.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.checkVignette.CustomizableEdges = borderEdges6;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.checkVignette.CustomizableEdges = borderEdges3;
             this.checkVignette.DialogResult = System.Windows.Forms.DialogResult.None;
             this.checkVignette.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.checkVignette.DisabledFillColor = System.Drawing.Color.Empty;
@@ -1053,26 +1100,26 @@
             this.licenseNumber.Modified = false;
             this.licenseNumber.Multiline = false;
             this.licenseNumber.Name = "licenseNumber";
-            stateProperties5.BorderColor = System.Drawing.Color.DeepSkyBlue;
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.licenseNumber.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.licenseNumber.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.licenseNumber.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.Lime;
-            stateProperties8.FillColor = System.Drawing.Color.Gray;
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.licenseNumber.OnIdleState = stateProperties8;
+            stateProperties1.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.licenseNumber.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.licenseNumber.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.licenseNumber.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Lime;
+            stateProperties4.FillColor = System.Drawing.Color.Gray;
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.licenseNumber.OnIdleState = stateProperties4;
             this.licenseNumber.Padding = new System.Windows.Forms.Padding(3);
             this.licenseNumber.PasswordChar = '\0';
             this.licenseNumber.PlaceholderForeColor = System.Drawing.Color.Maroon;
@@ -1095,6 +1142,59 @@
             this.licenseNumber.WordWrap = true;
             this.licenseNumber.TextChanged += new System.EventHandler(this.licenseNumber_TextChanged);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(4, 212);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(182, 14);
+            this.label9.TabIndex = 15;
+            this.label9.Text = "Последно 2 проверени коли";
+            // 
+            // bunifuPanel2
+            // 
+            this.bunifuPanel2.BackgroundColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel2.BackgroundImage")));
+            this.bunifuPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel2.BorderColor = System.Drawing.Color.DarkGray;
+            this.bunifuPanel2.BorderRadius = 3;
+            this.bunifuPanel2.BorderThickness = 1;
+            this.bunifuPanel2.Controls.Add(this.pictureBox8);
+            this.bunifuPanel2.Controls.Add(this.vehicleTwo);
+            this.bunifuPanel2.Location = new System.Drawing.Point(7, 370);
+            this.bunifuPanel2.Name = "bunifuPanel2";
+            this.bunifuPanel2.ShowBorders = true;
+            this.bunifuPanel2.Size = new System.Drawing.Size(162, 112);
+            this.bunifuPanel2.TabIndex = 16;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::ViggneteCheckBG.Properties.Resources.car_roof_box_512px;
+            this.pictureBox8.Location = new System.Drawing.Point(63, 3);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(36, 41);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 2;
+            this.pictureBox8.TabStop = false;
+            // 
+            // vehicleTwo
+            // 
+            this.vehicleTwo.AutoSize = true;
+            this.vehicleTwo.Location = new System.Drawing.Point(42, 64);
+            this.vehicleTwo.Name = "vehicleTwo";
+            this.vehicleTwo.Size = new System.Drawing.Size(98, 14);
+            this.vehicleTwo.TabIndex = 1;
+            this.vehicleTwo.Text = "Зареждане ...";
+            // 
+            // totalChecks
+            // 
+            this.totalChecks.AutoSize = true;
+            this.totalChecks.Location = new System.Drawing.Point(707, 215);
+            this.totalChecks.Name = "totalChecks";
+            this.totalChecks.Size = new System.Drawing.Size(196, 14);
+            this.totalChecks.TabIndex = 17;
+            this.totalChecks.Text = "Общо направени проверки : 0";
+            // 
             // startUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -1102,6 +1202,10 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(174)))), ((int)(((byte)(235)))));
             this.ClientSize = new System.Drawing.Size(1019, 617);
+            this.Controls.Add(this.totalChecks);
+            this.Controls.Add(this.bunifuPanel2);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.bunifuPanel1);
             this.Controls.Add(this.checkPunishments);
             this.Controls.Add(this.buttonCheckViggnette);
             this.Controls.Add(this.welcomeText);
@@ -1121,6 +1225,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Начално Меню | Vignette Check BG";
             this.Load += new System.EventHandler(this.startUI_Load);
+            this.bunifuPanel1.ResumeLayout(false);
+            this.bunifuPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.mainPanel.ResumeLayout(false);
             this.countryPanel.ResumeLayout(false);
             this.countryPanel.PerformLayout();
@@ -1146,6 +1253,9 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.bunifuPanel2.ResumeLayout(false);
+            this.bunifuPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1203,6 +1313,14 @@
         public System.Windows.Forms.Label countryLabel;
         public System.Windows.Forms.Label countryText;
         public System.Windows.Forms.PictureBox countryImgBox;
+        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
+        public System.Windows.Forms.PictureBox pictureBox7;
+        public System.Windows.Forms.Label vehicleOne;
+        public System.Windows.Forms.Label label9;
+        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;
+        public System.Windows.Forms.PictureBox pictureBox8;
+        public System.Windows.Forms.Label vehicleTwo;
+        public System.Windows.Forms.Label totalChecks;
     }
 }
 

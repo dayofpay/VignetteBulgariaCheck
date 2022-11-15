@@ -70,14 +70,23 @@ namespace ViggneteCheckBG
             infoLabel.Text = @"Софтуера е разработен
 От: v-devs.online
 Версия: " + Properties.Settings.Default.softwareVersion;
+            API.Vignette.getLastChecks();
+            vehicleOne.Text = moreData.lastChecked[0];
+            vehicleTwo.Text = moreData.lastChecked[1];
+            API.Vignette.getTotalChecks();
+            totalChecks.Text = $"Общо направени проверки : {moreData.totalChecks}";
         }
-
         private void checkVignette_Click(object sender, EventArgs e)
         {
-            if(licenseNumber.Text.Length > 4)
+            textReset();
+            bool checkNum = API.Vignette.validRegions.Any(getData => licenseNumber.Text.Contains(getData));
+            if (checkNum && licenseNumber.Text.Length <=8)
             {
+
                 checkLicense(licenseNumber.Text);
+                API.Vignette.Insert(licenseNumber.Text);
                 alert.Show(this, "Успешно проверихте МПС с рег. номер "+licenseNumber.Text, Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success);
+                totalChecks.Text = $"Общо направени проверки : {moreData.totalChecks}";
             }
             else
             {
@@ -214,11 +223,12 @@ namespace ViggneteCheckBG
         {
             if(ratingStats.Value >= 3)
             {
-                MessageBox.Show("Благодарим ви за добрата оценка !","Vignette Check BG");
+                alert.Show(this, "Благодарим ви за добрата оценка !", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information);
+
             }
             else
             {
-                MessageBox.Show("Благодарим ви за оценката !", "Vignette Check BG");
+                alert.Show(this, "Благодарим ви за оценката !", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information);
             }
         }
 
@@ -245,6 +255,10 @@ namespace ViggneteCheckBG
                 countryLabel.ForeColor = Color.FromArgb(128, 191, 169);
                 countryPanel.ForeColor = Color.FromArgb(128, 191, 169);
                 countryText.ForeColor = Color.FromArgb(128, 191, 169);
+                totalChecks.ForeColor = Color.FromArgb(128, 191, 169);
+                label9.ForeColor = Color.FromArgb(128, 191, 169);
+                vehicleOne.ForeColor = Color.FromArgb(128, 191, 169);
+                vehicleTwo.ForeColor = Color.FromArgb(128, 191, 169);
             }
             if (theme.Text == autoTheme)
             {
@@ -283,6 +297,18 @@ namespace ViggneteCheckBG
         private void mainPanel_Click(object sender, EventArgs e)
         {
 
+        }
+        public void textReset()
+        {
+            API.Vignette.ClearVehicles();
+            API.Vignette.getLastChecks();
+            API.Vignette.getTotalChecks();
+            vehicleOne.Text = moreData.lastChecked[0];
+            vehicleTwo.Text = moreData.lastChecked[1];
+            vehicleOne.Update();
+            vehicleTwo.Update();
+            totalChecks.Text = $"Общо направени проверки : {moreData.totalChecks}";
+            totalChecks.Update();
         }
     }
 }

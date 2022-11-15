@@ -145,6 +145,7 @@
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.2.9\lib\net40\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -162,6 +163,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\Vignette.cs" />
     <Compile Include="Error.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,7 +223,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="resources.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -271,6 +276,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="car_64px.ico" />
+    <None Include="Resources\car_roof_box_512px.png" />
     <None Include="Resources\country_480px.png" />
     <None Include="Resources\bulgaria_480px.png" />
     <None Include="Resources\confiscate.png" />
@@ -284,7 +290,8 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="AfterBuild">
     <ItemGroup>
-      <MoveToLibFolder Include="$(OutputPath)*.dll ; $(OutputPath)*.pdb ; $(OutputPath)*.xml" />
+      <MoveToresourcesFolder Include="$(OutputPath)*.dll ; $(OutputPath)*.pdb ; $(OutputPath)*.xml" />
     </ItemGroup>
+    <Move SourceFiles="@(MoveToresourcesFolder)" DestinationFolder="$(OutputPath)resources" OverwriteReadOnlyFiles="true" />
   </Target>
 </Project>
