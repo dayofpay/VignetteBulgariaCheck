@@ -163,6 +163,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\Update.cs" />
     <Compile Include="API\Vignette.cs" />
     <Compile Include="Error.cs">
       <SubType>Form</SubType>
@@ -276,6 +277,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="car_64px.ico" />
+    <None Include="Resources\available_updates_512px.png" />
     <None Include="Resources\car_roof_box_512px.png" />
     <None Include="Resources\country_480px.png" />
     <None Include="Resources\bulgaria_480px.png" />

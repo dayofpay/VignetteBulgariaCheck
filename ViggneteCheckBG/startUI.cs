@@ -75,6 +75,15 @@ namespace ViggneteCheckBG
             vehicleTwo.Text = moreData.lastChecked[1];
             API.Vignette.getTotalChecks();
             totalChecks.Text = $"Общо направени проверки : {moreData.totalChecks}";
+            if (!API.Update.IsLatest.Check())
+            {
+                updateLabel.Visible = true;
+                updateButton.Visible = true;
+            }
+            else
+            {
+                alert.Show(this, $"Вие използвате последната версия към софтуера {Properties.Settings.Default.softwareVersion} !", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success);
+            }
         }
         private void checkVignette_Click(object sender, EventArgs e)
         {
@@ -309,6 +318,17 @@ namespace ViggneteCheckBG
             vehicleTwo.Update();
             totalChecks.Text = $"Общо направени проверки : {moreData.totalChecks}";
             totalChecks.Update();
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            textReset();
+            alert.Show(this, "Успешно refresh-нахте базата данни !", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information);
+        }
+
+        private void updateButton_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(API.Update.getDownloadURL.Get());
         }
     }
 }

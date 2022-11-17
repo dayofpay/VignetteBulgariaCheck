@@ -73,6 +73,16 @@ namespace ViggneteCheckBG.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap available_updates_512px {
+            get {
+                object obj = ResourceManager.GetObject("available_updates_512px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap average_2_40px {
             get {
                 object obj = ResourceManager.GetObject("average_2_40px", resourceCulture);

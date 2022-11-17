@@ -29,14 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(startUI));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bordlessForm = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.exitButton = new Guna.UI2.WinForms.Guna2ControlBox();
             this.alert = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
@@ -46,6 +47,12 @@
             this.theme = new Bunifu.UI.WinForms.BunifuDropdown();
             this.welcomeText = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label9 = new System.Windows.Forms.Label();
+            this.totalChecks = new System.Windows.Forms.Label();
+            this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.vehicleTwo = new System.Windows.Forms.Label();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.vehicleOne = new System.Windows.Forms.Label();
@@ -90,11 +97,10 @@
             this.checkVignette = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.panelButtons = new Bunifu.UI.WinForms.BunifuPanel();
             this.licenseNumber = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.vehicleTwo = new System.Windows.Forms.Label();
-            this.totalChecks = new System.Windows.Forms.Label();
+            this.updateLabel = new System.Windows.Forms.Label();
+            this.updateButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.bunifuPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.mainPanel.SuspendLayout();
@@ -114,8 +120,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.bunifuPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // bordlessForm
@@ -223,7 +227,7 @@
             this.infoLabel.Name = "infoLabel";
             this.infoLabel.Size = new System.Drawing.Size(154, 56);
             this.infoLabel.TabIndex = 7;
-            this.infoLabel.Text = "Софтуера е разработен\r\nОт: v-devs.online\r\nВерсия: 1.5\r\n\r\n";
+            this.infoLabel.Text = "Софтуера е разработен\r\nОт: v-devs.online\r\nВерсия: 1.6\r\n\r\n";
             // 
             // ratingStats
             // 
@@ -308,6 +312,94 @@
             this.welcomeText.TabIndex = 11;
             this.welcomeText.Text = "Зареждане...";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(19, 147);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(147, 28);
+            this.label9.TabIndex = 15;
+            this.label9.Text = "Последно 2 проверени\r\n      коли";
+            // 
+            // totalChecks
+            // 
+            this.totalChecks.AutoSize = true;
+            this.totalChecks.Location = new System.Drawing.Point(707, 215);
+            this.totalChecks.Name = "totalChecks";
+            this.totalChecks.Size = new System.Drawing.Size(196, 14);
+            this.totalChecks.TabIndex = 17;
+            this.totalChecks.Text = "Общо направени проверки : 0";
+            // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.ActiveImage = null;
+            this.bunifuImageButton1.AllowAnimations = true;
+            this.bunifuImageButton1.AllowBuffering = false;
+            this.bunifuImageButton1.AllowToggling = false;
+            this.bunifuImageButton1.AllowZooming = true;
+            this.bunifuImageButton1.AllowZoomingOnFocus = false;
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bunifuImageButton1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.ErrorImage")));
+            this.bunifuImageButton1.FadeWhenInactive = false;
+            this.bunifuImageButton1.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.bunifuImageButton1.Image = global::ViggneteCheckBG.Properties.Resources.available_updates_512px;
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.ImageLocation = null;
+            this.bunifuImageButton1.ImageMargin = 20;
+            this.bunifuImageButton1.ImageSize = new System.Drawing.Size(30, 33);
+            this.bunifuImageButton1.ImageZoomSize = new System.Drawing.Size(50, 53);
+            this.bunifuImageButton1.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.InitialImage")));
+            this.bunifuImageButton1.Location = new System.Drawing.Point(128, 434);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Rotation = 0;
+            this.bunifuImageButton1.ShowActiveImage = true;
+            this.bunifuImageButton1.ShowCursorChanges = true;
+            this.bunifuImageButton1.ShowImageBorders = true;
+            this.bunifuImageButton1.ShowSizeMarkers = false;
+            this.bunifuImageButton1.Size = new System.Drawing.Size(50, 53);
+            this.bunifuImageButton1.TabIndex = 18;
+            this.bunifuImageButton1.ToolTipText = "";
+            this.bunifuImageButton1.WaitOnLoad = false;
+            this.bunifuImageButton1.Zoom = 20;
+            this.bunifuImageButton1.ZoomSpeed = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            // 
+            // bunifuPanel2
+            // 
+            this.bunifuPanel2.BackgroundColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel2.BackgroundImage")));
+            this.bunifuPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel2.BorderColor = System.Drawing.Color.DarkGray;
+            this.bunifuPanel2.BorderRadius = 3;
+            this.bunifuPanel2.BorderThickness = 1;
+            this.bunifuPanel2.Controls.Add(this.pictureBox8);
+            this.bunifuPanel2.Controls.Add(this.vehicleTwo);
+            this.bunifuPanel2.Location = new System.Drawing.Point(4, 316);
+            this.bunifuPanel2.Name = "bunifuPanel2";
+            this.bunifuPanel2.ShowBorders = true;
+            this.bunifuPanel2.Size = new System.Drawing.Size(162, 112);
+            this.bunifuPanel2.TabIndex = 16;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::ViggneteCheckBG.Properties.Resources.car_roof_box_512px;
+            this.pictureBox8.Location = new System.Drawing.Point(63, 3);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(36, 41);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 2;
+            this.pictureBox8.TabStop = false;
+            // 
+            // vehicleTwo
+            // 
+            this.vehicleTwo.AutoSize = true;
+            this.vehicleTwo.Location = new System.Drawing.Point(42, 64);
+            this.vehicleTwo.Name = "vehicleTwo";
+            this.vehicleTwo.Size = new System.Drawing.Size(98, 14);
+            this.vehicleTwo.TabIndex = 1;
+            this.vehicleTwo.Text = "Зареждане ...";
+            // 
             // bunifuPanel1
             // 
             this.bunifuPanel1.BackgroundColor = System.Drawing.Color.Transparent;
@@ -318,7 +410,7 @@
             this.bunifuPanel1.BorderThickness = 1;
             this.bunifuPanel1.Controls.Add(this.pictureBox7);
             this.bunifuPanel1.Controls.Add(this.vehicleOne);
-            this.bunifuPanel1.Location = new System.Drawing.Point(7, 240);
+            this.bunifuPanel1.Location = new System.Drawing.Point(4, 186);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
             this.bunifuPanel1.Size = new System.Drawing.Size(162, 112);
@@ -362,11 +454,11 @@
             this.checkPunishments.ColorContrastOnClick = 45;
             this.checkPunishments.ColorContrastOnHover = 45;
             this.checkPunishments.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.checkPunishments.CustomizableEdges = borderEdges1;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.checkPunishments.CustomizableEdges = borderEdges2;
             this.checkPunishments.DialogResult = System.Windows.Forms.DialogResult.None;
             this.checkPunishments.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.checkPunishments.DisabledFillColor = System.Drawing.Color.Empty;
@@ -454,11 +546,11 @@
             this.buttonCheckViggnette.ColorContrastOnClick = 45;
             this.buttonCheckViggnette.ColorContrastOnHover = 45;
             this.buttonCheckViggnette.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.buttonCheckViggnette.CustomizableEdges = borderEdges2;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.buttonCheckViggnette.CustomizableEdges = borderEdges3;
             this.buttonCheckViggnette.DialogResult = System.Windows.Forms.DialogResult.None;
             this.buttonCheckViggnette.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.buttonCheckViggnette.DisabledFillColor = System.Drawing.Color.Empty;
@@ -977,11 +1069,11 @@
             this.checkVignette.ColorContrastOnClick = 45;
             this.checkVignette.ColorContrastOnHover = 45;
             this.checkVignette.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.checkVignette.CustomizableEdges = borderEdges3;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.checkVignette.CustomizableEdges = borderEdges4;
             this.checkVignette.DialogResult = System.Windows.Forms.DialogResult.None;
             this.checkVignette.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.checkVignette.DisabledFillColor = System.Drawing.Color.Empty;
@@ -1142,58 +1234,108 @@
             this.licenseNumber.WordWrap = true;
             this.licenseNumber.TextChanged += new System.EventHandler(this.licenseNumber_TextChanged);
             // 
-            // label9
+            // updateLabel
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(4, 212);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(182, 14);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "Последно 2 проверени коли";
+            this.updateLabel.AutoSize = true;
+            this.updateLabel.Location = new System.Drawing.Point(376, 73);
+            this.updateLabel.Name = "updateLabel";
+            this.updateLabel.Size = new System.Drawing.Size(350, 14);
+            this.updateLabel.TabIndex = 19;
+            this.updateLabel.Text = "Налична е нова версия на софтуера, изтеглетя е от";
+            this.updateLabel.Visible = false;
             // 
-            // bunifuPanel2
+            // updateButton
             // 
-            this.bunifuPanel2.BackgroundColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel2.BackgroundImage")));
-            this.bunifuPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel2.BorderColor = System.Drawing.Color.DarkGray;
-            this.bunifuPanel2.BorderRadius = 3;
-            this.bunifuPanel2.BorderThickness = 1;
-            this.bunifuPanel2.Controls.Add(this.pictureBox8);
-            this.bunifuPanel2.Controls.Add(this.vehicleTwo);
-            this.bunifuPanel2.Location = new System.Drawing.Point(7, 370);
-            this.bunifuPanel2.Name = "bunifuPanel2";
-            this.bunifuPanel2.ShowBorders = true;
-            this.bunifuPanel2.Size = new System.Drawing.Size(162, 112);
-            this.bunifuPanel2.TabIndex = 16;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::ViggneteCheckBG.Properties.Resources.car_roof_box_512px;
-            this.pictureBox8.Location = new System.Drawing.Point(63, 3);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(36, 41);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 2;
-            this.pictureBox8.TabStop = false;
-            // 
-            // vehicleTwo
-            // 
-            this.vehicleTwo.AutoSize = true;
-            this.vehicleTwo.Location = new System.Drawing.Point(42, 64);
-            this.vehicleTwo.Name = "vehicleTwo";
-            this.vehicleTwo.Size = new System.Drawing.Size(98, 14);
-            this.vehicleTwo.TabIndex = 1;
-            this.vehicleTwo.Text = "Зареждане ...";
-            // 
-            // totalChecks
-            // 
-            this.totalChecks.AutoSize = true;
-            this.totalChecks.Location = new System.Drawing.Point(707, 215);
-            this.totalChecks.Name = "totalChecks";
-            this.totalChecks.Size = new System.Drawing.Size(196, 14);
-            this.totalChecks.TabIndex = 17;
-            this.totalChecks.Text = "Общо направени проверки : 0";
+            this.updateButton.AllowAnimations = true;
+            this.updateButton.AllowMouseEffects = true;
+            this.updateButton.AllowToggling = false;
+            this.updateButton.AnimationSpeed = 200;
+            this.updateButton.AutoGenerateColors = false;
+            this.updateButton.AutoRoundBorders = false;
+            this.updateButton.AutoSizeLeftIcon = true;
+            this.updateButton.AutoSizeRightIcon = true;
+            this.updateButton.BackColor = System.Drawing.Color.Transparent;
+            this.updateButton.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.updateButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("updateButton.BackgroundImage")));
+            this.updateButton.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.updateButton.ButtonText = "ТУК";
+            this.updateButton.ButtonTextMarginLeft = 0;
+            this.updateButton.ColorContrastOnClick = 45;
+            this.updateButton.ColorContrastOnHover = 45;
+            this.updateButton.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.updateButton.CustomizableEdges = borderEdges1;
+            this.updateButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.updateButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.updateButton.DisabledFillColor = System.Drawing.Color.Empty;
+            this.updateButton.DisabledForecolor = System.Drawing.Color.Empty;
+            this.updateButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.updateButton.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.updateButton.ForeColor = System.Drawing.Color.SpringGreen;
+            this.updateButton.IconLeft = null;
+            this.updateButton.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.updateButton.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.updateButton.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.updateButton.IconMarginLeft = 11;
+            this.updateButton.IconPadding = 10;
+            this.updateButton.IconRight = null;
+            this.updateButton.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.updateButton.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.updateButton.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.updateButton.IconSize = 25;
+            this.updateButton.IdleBorderColor = System.Drawing.Color.Empty;
+            this.updateButton.IdleBorderRadius = 0;
+            this.updateButton.IdleBorderThickness = 0;
+            this.updateButton.IdleFillColor = System.Drawing.Color.Empty;
+            this.updateButton.IdleIconLeftImage = null;
+            this.updateButton.IdleIconRightImage = null;
+            this.updateButton.IndicateFocus = false;
+            this.updateButton.Location = new System.Drawing.Point(379, 90);
+            this.updateButton.Name = "updateButton";
+            this.updateButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.updateButton.OnDisabledState.BorderRadius = 1;
+            this.updateButton.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.updateButton.OnDisabledState.BorderThickness = 1;
+            this.updateButton.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.updateButton.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.updateButton.OnDisabledState.IconLeftImage = null;
+            this.updateButton.OnDisabledState.IconRightImage = null;
+            this.updateButton.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.updateButton.onHoverState.BorderRadius = 1;
+            this.updateButton.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.updateButton.onHoverState.BorderThickness = 1;
+            this.updateButton.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.updateButton.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.updateButton.onHoverState.IconLeftImage = null;
+            this.updateButton.onHoverState.IconRightImage = null;
+            this.updateButton.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.updateButton.OnIdleState.BorderRadius = 1;
+            this.updateButton.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.updateButton.OnIdleState.BorderThickness = 1;
+            this.updateButton.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.updateButton.OnIdleState.ForeColor = System.Drawing.Color.SpringGreen;
+            this.updateButton.OnIdleState.IconLeftImage = null;
+            this.updateButton.OnIdleState.IconRightImage = null;
+            this.updateButton.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.updateButton.OnPressedState.BorderRadius = 1;
+            this.updateButton.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.updateButton.OnPressedState.BorderThickness = 1;
+            this.updateButton.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.updateButton.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.updateButton.OnPressedState.IconLeftImage = null;
+            this.updateButton.OnPressedState.IconRightImage = null;
+            this.updateButton.Size = new System.Drawing.Size(354, 28);
+            this.updateButton.TabIndex = 20;
+            this.updateButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.updateButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.updateButton.TextMarginLeft = 0;
+            this.updateButton.TextPadding = new System.Windows.Forms.Padding(0);
+            this.updateButton.UseDefaultRadiusAndThickness = true;
+            this.updateButton.Visible = false;
+            this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
             // 
             // startUI
             // 
@@ -1202,6 +1344,9 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(174)))), ((int)(((byte)(235)))));
             this.ClientSize = new System.Drawing.Size(1019, 617);
+            this.Controls.Add(this.updateButton);
+            this.Controls.Add(this.updateLabel);
+            this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.totalChecks);
             this.Controls.Add(this.bunifuPanel2);
             this.Controls.Add(this.label9);
@@ -1225,6 +1370,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Начално Меню | Vignette Check BG";
             this.Load += new System.EventHandler(this.startUI_Load);
+            this.bunifuPanel2.ResumeLayout(false);
+            this.bunifuPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -1253,9 +1401,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.bunifuPanel2.ResumeLayout(false);
-            this.bunifuPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1321,6 +1466,9 @@
         public System.Windows.Forms.PictureBox pictureBox8;
         public System.Windows.Forms.Label vehicleTwo;
         public System.Windows.Forms.Label totalChecks;
+        private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton1;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton updateButton;
+        private System.Windows.Forms.Label updateLabel;
     }
 }
 
