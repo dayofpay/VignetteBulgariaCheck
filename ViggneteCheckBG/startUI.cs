@@ -68,7 +68,7 @@ namespace ViggneteCheckBG
             timer1.Start();
 
             infoLabel.Text = @"Софтуера е разработен
-От: v-devs.online
+От: v-devs.eu
 Версия: " + Properties.Settings.Default.softwareVersion;
             API.Vignette.getLastChecks();
             vehicleOne.Text = moreData.lastChecked[0];

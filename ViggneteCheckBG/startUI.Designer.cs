@@ -133,11 +133,9 @@
             // 
             this.exitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.exitButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(174)))), ((int)(((byte)(235)))));
-            this.exitButton.HoverState.Parent = this.exitButton;
             this.exitButton.IconColor = System.Drawing.Color.White;
             this.exitButton.Location = new System.Drawing.Point(964, -2);
             this.exitButton.Name = "exitButton";
-            this.exitButton.ShadowDecoration.Parent = this.exitButton;
             this.exitButton.Size = new System.Drawing.Size(52, 31);
             this.exitButton.TabIndex = 0;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
@@ -227,7 +225,7 @@
             this.infoLabel.Name = "infoLabel";
             this.infoLabel.Size = new System.Drawing.Size(154, 56);
             this.infoLabel.TabIndex = 7;
-            this.infoLabel.Text = "Софтуера е разработен\r\nОт: v-devs.online\r\nВерсия: 1.6\r\n\r\n";
+            this.infoLabel.Text = "Софтуера е разработен\r\nОт: v-devs.eu\r\nВерсия: 1.6\r\n\r\n";
             // 
             // ratingStats
             // 
@@ -737,23 +735,18 @@
             // moreInfo
             // 
             this.moreInfo.BorderRadius = 7;
-            this.moreInfo.CheckedState.Parent = this.moreInfo;
             this.moreInfo.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 55, 1);
-            this.moreInfo.CustomImages.Parent = this.moreInfo;
             this.moreInfo.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.moreInfo.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.moreInfo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.moreInfo.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.moreInfo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.moreInfo.DisabledState.Parent = this.moreInfo;
             this.moreInfo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.moreInfo.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.moreInfo.Font = new System.Drawing.Font("Sitka Text", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.moreInfo.ForeColor = System.Drawing.Color.Aqua;
-            this.moreInfo.HoverState.Parent = this.moreInfo;
             this.moreInfo.Location = new System.Drawing.Point(604, 290);
             this.moreInfo.Name = "moreInfo";
-            this.moreInfo.ShadowDecoration.Parent = this.moreInfo;
             this.moreInfo.Size = new System.Drawing.Size(180, 31);
             this.moreInfo.TabIndex = 4;
             this.moreInfo.Text = "Още информация";

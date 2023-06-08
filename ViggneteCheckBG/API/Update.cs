@@ -16,7 +16,7 @@ namespace ViggneteCheckBG.API
         {
             public static bool Check()
             {
-                WebRequest request = WebRequest.Create("https://v-devs.online/api.php?getLatestVersion&source=vignette");
+                WebRequest request = WebRequest.Create("https://v-devs.eu/api.php?getLatestVersion&source=vignette");
                 request.Credentials = CredentialCache.DefaultCredentials;
                 HttpWebResponse response = (HttpWebResponse)request.GetResponse();
                 Console.WriteLine(response.StatusDescription);
@@ -41,7 +41,7 @@ namespace ViggneteCheckBG.API
         {
             public static string Get()
             {
-                WebRequest request = WebRequest.Create("https://v-devs.online/api.php?getLatestVersion&source=vignette&getDownloadURL");
+                WebRequest request = WebRequest.Create("https://v-devs.eu/api.php?getLatestVersion&source=vignette&getDownloadURL");
                 request.Credentials = CredentialCache.DefaultCredentials;
                 HttpWebResponse response = (HttpWebResponse)request.GetResponse();
                 Console.WriteLine(response.StatusDescription);

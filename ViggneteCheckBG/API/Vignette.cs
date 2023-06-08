@@ -15,7 +15,7 @@ namespace ViggneteCheckBG.API
         public static String[] validRegions = { "Е", "А", "В", "ВТ", "ВН", "ВР", "ЕВ", "ТХ", "К", "КН", "ОВ", "М", "РА", "РК", "ЕН", "РВ", "РР", "Р", "СС", "СН", "СМ", "СО", "С", "СА", "СВ", "СТ", "Т", "Х", "Н", "У" };
         public static void getLastChecks()
         {
-            WebRequest request = WebRequest.Create("https://v-devs.online/api.php?getLastVignetteChecks");
+            WebRequest request = WebRequest.Create("https://v-devs.eu/api.php?getLastVignetteChecks");
             request.Credentials = CredentialCache.DefaultCredentials;
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
             Console.WriteLine(response.StatusDescription);
@@ -37,7 +37,7 @@ namespace ViggneteCheckBG.API
         }
         public static void getTotalChecks()
         {
-            WebRequest request = WebRequest.Create("https://v-devs.online/api.php?getTotalVignetteChecks");
+            WebRequest request = WebRequest.Create("https://v-devs.eu/api.php?getTotalVignetteChecks");
             request.Credentials = CredentialCache.DefaultCredentials;
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
             Console.WriteLine(response.StatusDescription);
@@ -53,7 +53,7 @@ namespace ViggneteCheckBG.API
         {
             try
             {
-                WebRequest request = WebRequest.Create("https://v-devs.online/api.php?insertVignette&license_number=" + licenseNumber);
+                WebRequest request = WebRequest.Create("https://v-devs.eu/api.php?insertVignette&license_number=" + licenseNumber);
                 request.Credentials = CredentialCache.DefaultCredentials;
                 HttpWebResponse response = (HttpWebResponse)request.GetResponse();
                 Console.WriteLine(response.StatusDescription);
