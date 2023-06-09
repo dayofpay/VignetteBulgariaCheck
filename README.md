@@ -29,25 +29,25 @@
 
 * Вземи общ брой проверени винетки
 ```http
-https://v-devs.online/api.php?getTotalVignetteChecks
+https://v-devs.eu/api.php?getTotalVignetteChecks
 ```
 * Взима последната версия на софтуера
 ```http
-https://v-devs.online/api.php?getLatestVersion&source=vignette
+https://v-devs.eu/api.php?getLatestVersion&source=vignette
 ```
 * Взима link за сваляне на последната версия към софтуера
 ```http
-https://v-devs.online/api.php?getLatestVersion&source=vignette&getDownloadURL
+https://v-devs.eu/api.php?getLatestVersion&source=vignette&getDownloadURL
 ```
 * Взима данни за всяка версия на софтуера
 ```http
-https://v-devs.online/api.php?getVersions&software=vignettecheckbg&datatype=allData
+https://v-devs.eu/api.php?getVersions&software=vignettecheckbg&datatype=allData
 ```
 * Взима всички налични ПУБЛИЧНИ версии за софтуера
 ```http
-https://v-devs.online/api.php?getVersions&software=vignettecheckbg&datatype=versionsOnly
+https://v-devs.eu/api.php?getVersions&software=vignettecheckbg&datatype=versionsOnly
 ```
 * Взима всички налични линкове за сваляне на софтуера
 ```http
-https://v-devs.online/api.php?getVersions&software=vignettecheckbg&datatype=downloadURL_all
+https://v-devs.eu/api.php?getVersions&software=vignettecheckbg&datatype=downloadURL_all
 ```
