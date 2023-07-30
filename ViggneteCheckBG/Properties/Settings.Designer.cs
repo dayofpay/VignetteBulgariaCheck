@@ -25,13 +25,25 @@ namespace ViggneteCheckBG.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("1.7")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1.8")]
         public string softwareVersion {
             get {
                 return ((string)(this["softwareVersion"]));
             }
             set {
                 this["softwareVersion"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool analyticsData {
+            get {
+                return ((bool)(this["analyticsData"]));
+            }
+            set {
+                this["analyticsData"] = value;
             }
         }
     }

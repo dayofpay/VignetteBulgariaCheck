@@ -12,6 +12,7 @@ using System.IO;
 using Newtonsoft.Json;
 using System.Net.Http;
 using Newtonsoft.Json.Linq;
+using System.Threading;
 
 namespace ViggneteCheckBG
 {
@@ -66,23 +67,34 @@ namespace ViggneteCheckBG
             timer1.Interval = (500);
             timer1.Tick += new EventHandler(timer1_Tick);
             timer1.Start();
+            if (!Properties.Settings.Default.analyticsData)
+            {
+                System.Threading.Thread.Sleep(2500);
+                alert.Show(this, $"Тъй като сте изключили analytics датата, вие ще имате \r\nограничен достъп до ресурсите на софтуера и няма да \r\nполучавате известия за нови актуализации", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning,8000);
 
+            }
             infoLabel.Text = @"Софтуера е разработен
 От: v-devs.eu
 Версия: " + Properties.Settings.Default.softwareVersion;
-            API.Vignette.getLastChecks();
-            vehicleOne.Text = moreData.lastChecked[0];
-            vehicleTwo.Text = moreData.lastChecked[1];
-            API.Vignette.getTotalChecks();
-            totalChecks.Text = $"Общо направени проверки : {moreData.totalChecks}";
-            if (!API.Update.IsLatest.Check())
+            try
             {
-                updateLabel.Visible = true;
-                updateButton.Visible = true;
-            }
-            else
+                API.Vignette.getLastChecks();
+                vehicleOne.Text = moreData.lastChecked[0];
+                vehicleTwo.Text = moreData.lastChecked[1];
+                API.Vignette.getTotalChecks();
+                totalChecks.Text = $"Общо направени проверки : {moreData.totalChecks}";
+                if (!API.Update.IsLatest.Check())
+                {
+                    updateLabel.Visible = true;
+                    updateButton.Visible = true;
+                }
+                else
+                {
+                    alert.Show(this, $"Вие използвате последната версия към софтуера {Properties.Settings.Default.softwareVersion} !", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success);
+                }
+            }catch(Exception ex)
             {
-                alert.Show(this, $"Вие използвате последната версия към софтуера {Properties.Settings.Default.softwareVersion} !", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success);
+                alert.Show(this, "Имаше грешка при опит да направим проверка на вашата версия ...", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error);
             }
         }
         private void checkVignette_Click(object sender, EventArgs e)
@@ -309,15 +321,29 @@ namespace ViggneteCheckBG
         }
         public void textReset()
         {
-            API.Vignette.ClearVehicles();
-            API.Vignette.getLastChecks();
-            API.Vignette.getTotalChecks();
-            vehicleOne.Text = moreData.lastChecked[0];
-            vehicleTwo.Text = moreData.lastChecked[1];
-            vehicleOne.Update();
-            vehicleTwo.Update();
-            totalChecks.Text = $"Общо направени проверки : {moreData.totalChecks}";
-            totalChecks.Update();
+            if (Properties.Settings.Default.analyticsData)
+            {
+                try
+                {
+                    API.Vignette.ClearVehicles();
+                    API.Vignette.getLastChecks();
+                    API.Vignette.getTotalChecks();
+                    vehicleOne.Text = moreData.lastChecked[0];
+                    vehicleTwo.Text = moreData.lastChecked[1];
+                    vehicleOne.Update();
+                    vehicleTwo.Update();
+                    totalChecks.Text = $"Общо направени проверки : {moreData.totalChecks}";
+                    totalChecks.Update();
+                }
+                catch(Exception e)
+                {
+                    alert.Show(this, e.Message, Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error);
+                }
+            }
+            else
+            {
+                totalChecks.Text = $"Analytics  датата е изключена";
+            }
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)

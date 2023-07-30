@@ -3,7 +3,10 @@
   <Profiles />
   <Settings>
     <Setting Name="softwareVersion" Type="System.String" Scope="User">
-      <Value Profile="(Default)">1.7</Value>
+      <Value Profile="(Default)">1.8</Value>
+    </Setting>
+    <Setting Name="analyticsData" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
     </Setting>
   </Settings>
 </SettingsFile>
